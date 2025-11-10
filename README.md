@@ -58,6 +58,23 @@ This fragment collection brings their brand to life with professional, responsiv
 - Configurable buttons and labels
 - **Location:** `stentech-fragments/cta-section/`
 
+### 7. **Header Navigation**
+- Professional sticky navigation with StenTech branding
+- Dropdown menus for Products and Services
+- Full keyboard accessibility (Enter/Space/Arrow/Escape keys)
+- Responsive mobile menu with hamburger toggle
+- Complete focus trapping and ARIA attributes
+- Configurable logo, CTA button, and sticky behavior
+- **Location:** `stentech-fragments/header-navigation/`
+
+### 8. **Footer**
+- Comprehensive footer with company info and links
+- Multi-column responsive layout
+- Social media links with icons
+- Auto-updating copyright year
+- Configurable company description and contact details
+- **Location:** `stentech-fragments/footer/`
+
 ## Liferay DXP Structure
 
 Each fragment follows the standard Liferay DXP fragment structure:
