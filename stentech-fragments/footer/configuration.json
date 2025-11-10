@@ -1,0 +1,48 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "companyDescription",
+          "label": "Company Description",
+          "description": "Brief company description",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "The undisputed leader in SMT stencils, tooling, and precision parts manufacturing, combining unmatched exclusive technologies, industry knowledge and engineering expertise."
+        },
+        {
+          "name": "phoneNumber",
+          "label": "Phone Number",
+          "description": "Main contact phone number",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "1-800-STENTECH"
+        },
+        {
+          "name": "email",
+          "label": "Email Address",
+          "description": "Contact email address",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "info@stentech.com"
+        },
+        {
+          "name": "address",
+          "label": "Address",
+          "description": "Company headquarters address",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "North America - 21+ Locations"
+        },
+        {
+          "name": "copyrightYear",
+          "label": "Copyright Year",
+          "description": "Year for copyright notice",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "2025"
+        }
+      ]
+    }
+  ]
+}

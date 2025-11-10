@@ -1,4 +1,111 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const headerNav = document.getElementById('header-nav');
+  if (headerNav) {
+    const mobileMenuToggle = headerNav.querySelector('.mobile-menu-toggle');
+    const mobileMenu = headerNav.querySelector('.mobile-menu');
+    
+    if (mobileMenuToggle && mobileMenu) {
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      mobileMenuToggle.setAttribute('aria-controls', 'mobile-menu');
+      mobileMenu.setAttribute('id', 'mobile-menu');
+      
+      function toggleMobileMenu(open) {
+        const isOpen = open !== undefined ? open : !mobileMenu.classList.contains('active');
+        mobileMenuToggle.classList.toggle('active', isOpen);
+        mobileMenu.classList.toggle('active', isOpen);
+        mobileMenuToggle.setAttribute('aria-expanded', isOpen.toString());
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+        
+        if (isOpen) {
+          const firstLink = mobileMenu.querySelector('.mobile-nav-link');
+          if (firstLink) firstLink.focus();
+        }
+      }
+      
+      mobileMenuToggle.addEventListener('click', function() {
+        toggleMobileMenu();
+      });
+      
+      mobileMenu.addEventListener('click', function(e) {
+        if (e.target === mobileMenu) {
+          toggleMobileMenu(false);
+        }
+      });
+      
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+          toggleMobileMenu(false);
+          mobileMenuToggle.focus();
+        }
+      });
+      
+      const mobileLinks = mobileMenu.querySelectorAll('.mobile-nav-link, .mobile-nav-cta');
+      mobileLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          toggleMobileMenu(false);
+        });
+      });
+    }
+    
+    const navItems = headerNav.querySelectorAll('.nav-item');
+    navItems.forEach(function(item) {
+      const link = item.querySelector('.nav-link');
+      const dropdown = item.querySelector('.dropdown-menu');
+      
+      if (link && dropdown) {
+        link.setAttribute('aria-haspopup', 'true');
+        link.setAttribute('aria-expanded', 'false');
+        
+        link.addEventListener('mouseenter', function() {
+          this.setAttribute('aria-expanded', 'true');
+        });
+        
+        item.addEventListener('mouseleave', function() {
+          link.setAttribute('aria-expanded', 'false');
+        });
+        
+        link.addEventListener('focus', function() {
+          this.setAttribute('aria-expanded', 'true');
+        });
+        
+        link.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            this.setAttribute('aria-expanded', 'false');
+            this.blur();
+          }
+        });
+      }
+    });
+    
+    if (headerNav.classList.contains('sticky')) {
+      let lastScroll = 0;
+      window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100) {
+          headerNav.style.boxShadow = '0 4px 20px rgba(0, 51, 102, 0.15)';
+        } else {
+          headerNav.style.boxShadow = '0 2px 10px rgba(0, 51, 102, 0.1)';
+        }
+        
+        lastScroll = currentScroll;
+      });
+    }
+  }
+
+  const footer = document.getElementById('footer');
+  if (footer) {
+    const currentYear = new Date().getFullYear();
+    const copyrightElement = footer.querySelector('.copyright');
+    
+    if (copyrightElement) {
+      const copyrightText = copyrightElement.textContent;
+      if (copyrightText.includes('2025')) {
+        copyrightElement.textContent = copyrightText.replace('2025', currentYear.toString());
+      }
+    }
+  }
+
   const productGrid = document.getElementById('product-grid');
   if (productGrid) {
     const cards = productGrid.querySelectorAll('.product-card');

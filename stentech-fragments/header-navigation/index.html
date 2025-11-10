@@ -1,0 +1,67 @@
+<header class="stentech-header[#if stickyHeader] sticky[/#if]" data-fragment-namespace="${fragmentEntryLinkNamespace}">
+  <div class="header-container">
+    <div class="header-logo">
+      <a href="/">
+        [#if logoUrl??]
+          <img src="[#logoUrl/]" alt="[#logoText/]" class="logo-image">
+        [#else]
+          <span class="logo-text">[#logoText/]</span>
+        [/#if]
+      </a>
+    </div>
+    
+    <nav class="header-nav">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/products" class="nav-link">Products</a>
+          <div class="dropdown-menu">
+            <a href="/products/stencils" class="dropdown-item">SMT Stencils</a>
+            <a href="/products/machining" class="dropdown-item">Machining</a>
+            <a href="/products/parts" class="dropdown-item">Parts</a>
+            <a href="/products/tooling" class="dropdown-item">Tooling & Fixtures</a>
+            <a href="/products/parts/coating" class="dropdown-item">Coatings</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="/company" class="nav-link">Company</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact/location" class="nav-link">Locations</a>
+        </li>
+        <li class="nav-item">
+          <a href="/learning/resources" class="nav-link">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a href="/online-ordering" class="nav-link">Online Ordering</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact/contact-us" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="header-actions">
+      <a href="[#ctaUrl/]" class="header-cta">[#ctaText/]</a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </div>
+  
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="/products" class="mobile-nav-link">Products</a>
+      <a href="/products/stencils" class="mobile-nav-link submenu-item">SMT Stencils</a>
+      <a href="/products/machining" class="mobile-nav-link submenu-item">Machining</a>
+      <a href="/products/parts" class="mobile-nav-link submenu-item">Parts</a>
+      <a href="/products/tooling" class="mobile-nav-link submenu-item">Tooling & Fixtures</a>
+      <a href="/products/parts/coating" class="mobile-nav-link submenu-item">Coatings</a>
+      <a href="/company" class="mobile-nav-link">Company</a>
+      <a href="/contact/location" class="mobile-nav-link">Locations</a>
+      <a href="/learning/resources" class="mobile-nav-link">Resources</a>
+      <a href="/online-ordering" class="mobile-nav-link">Online Ordering</a>
+      <a href="/contact/contact-us" class="mobile-nav-link">Contact</a>
+      <a href="[#ctaUrl/]" class="mobile-nav-cta">[#ctaText/]</a>
+    </div>
+  </div>
+</header>

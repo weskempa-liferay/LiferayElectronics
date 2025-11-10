@@ -1,0 +1,48 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "logoUrl",
+          "label": "Logo Image URL",
+          "description": "URL to company logo",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": ""
+        },
+        {
+          "name": "logoText",
+          "label": "Logo Text",
+          "description": "Company name (fallback if no logo image)",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "StenTech"
+        },
+        {
+          "name": "ctaText",
+          "label": "CTA Button Text",
+          "description": "Call to action button text",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Get a Quote"
+        },
+        {
+          "name": "ctaUrl",
+          "label": "CTA Button URL",
+          "description": "Call to action button link",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "/get-a-quote"
+        },
+        {
+          "name": "stickyHeader",
+          "label": "Sticky Header",
+          "description": "Make header stick to top on scroll",
+          "type": "checkbox",
+          "dataType": "bool",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}
