@@ -1,0 +1,56 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "headlineText",
+          "label": "Headline Text",
+          "description": "Main headline text",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Helping electronic manufacturers run sharper, print cleaner, perform better."
+        },
+        {
+          "name": "subheadlineText",
+          "label": "Subheadline Text",
+          "description": "Subheadline or tagline",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Discover"
+        },
+        {
+          "name": "videoUrl",
+          "label": "Background Video URL",
+          "description": "URL to background video",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": ""
+        },
+        {
+          "name": "videoPosterUrl",
+          "label": "Video Poster Image URL",
+          "description": "Fallback image for video",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": ""
+        },
+        {
+          "name": "ctaText",
+          "label": "CTA Button Text",
+          "description": "Call to action button text",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Discover"
+        },
+        {
+          "name": "ctaUrl",
+          "label": "CTA Button URL",
+          "description": "Call to action button link",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "#products"
+        }
+      ]
+    }
+  ]
+}

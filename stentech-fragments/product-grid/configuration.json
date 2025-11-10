@@ -1,0 +1,24 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "sectionTitle",
+          "label": "Section Title",
+          "description": "Title for the product grid section",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "A fully integrated suite of solutions to streamline your production."
+        },
+        {
+          "name": "sectionSubtitle",
+          "label": "Section Subtitle",
+          "description": "Subtitle above the main title",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "INNOVATIVE PROBLEM SOLVERS"
+        }
+      ]
+    }
+  ]
+}

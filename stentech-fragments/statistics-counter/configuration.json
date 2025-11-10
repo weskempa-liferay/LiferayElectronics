@@ -1,0 +1,108 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "sectionTitle",
+          "label": "Section Title",
+          "description": "Title for statistics section",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Strength Where It Matters."
+        },
+        {
+          "name": "sectionSubtitle",
+          "label": "Section Subtitle",
+          "description": "Subtitle above the main title",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Scalable and proven."
+        },
+        {
+          "name": "stat1Number",
+          "label": "Statistic 1 Number",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "21+"
+        },
+        {
+          "name": "stat1Label",
+          "label": "Statistic 1 Label",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "LOCATIONS"
+        },
+        {
+          "name": "stat1Description",
+          "label": "Statistic 1 Description",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "across three countries, delivering unmatched speed, redundancy, capacity, and flexibility."
+        },
+        {
+          "name": "stat2Number",
+          "label": "Statistic 2 Number",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "90+"
+        },
+        {
+          "name": "stat2Label",
+          "label": "Statistic 2 Label",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "CAD DESIGNERS"
+        },
+        {
+          "name": "stat2Description",
+          "label": "Statistic 2 Description",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "experts dedicated to pushing the boundaries of design and engineering"
+        },
+        {
+          "name": "stat3Number",
+          "label": "Statistic 3 Number",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "350+"
+        },
+        {
+          "name": "stat3Label",
+          "label": "Statistic 3 Label",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "TEAM MEMBERS"
+        },
+        {
+          "name": "stat3Description",
+          "label": "Statistic 3 Description",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "experienced production and support teams, with a profound understanding of the surface mount assembly process from start to finish."
+        },
+        {
+          "name": "stat4Number",
+          "label": "Statistic 4 Number",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "3500+"
+        },
+        {
+          "name": "stat4Label",
+          "label": "Statistic 4 Label",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "CUSTOMERS"
+        },
+        {
+          "name": "stat4Description",
+          "label": "Statistic 4 Description",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "we set the industry standard for precision, reliability, and speed to ensure success for every customer."
+        }
+      ]
+    }
+  ]
+}

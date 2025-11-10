@@ -1,0 +1,64 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "title",
+          "label": "Section Title",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Your Online Ordering Hub."
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "StenTech makes stencil ordering fast and easy with our online system, reducing processing time by 20% and enabling faster turnaround."
+        },
+        {
+          "name": "primaryCtaText",
+          "label": "Primary CTA Text",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Order Now"
+        },
+        {
+          "name": "primaryCtaUrl",
+          "label": "Primary CTA URL",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "/online-ordering"
+        },
+        {
+          "name": "primaryCtaLabel",
+          "label": "Primary CTA Label",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "SMT STENCILS"
+        },
+        {
+          "name": "secondaryCtaText",
+          "label": "Secondary CTA Text",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Get a Quote"
+        },
+        {
+          "name": "secondaryCtaUrl",
+          "label": "Secondary CTA URL",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "/get-a-quote"
+        },
+        {
+          "name": "secondaryCtaLabel",
+          "label": "Secondary CTA Label",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "MACHINING, TOOLING & PARTS"
+        }
+      ]
+    }
+  ]
+}

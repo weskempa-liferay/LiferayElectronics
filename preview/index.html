@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StenTech Fragments Preview - Liferay DXP</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .preview-header {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    
+    .preview-header h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .preview-header p {
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    
+    .fragment-demo {
+      border-bottom: 3px solid #e0e0e0;
+    }
+    
+    .fragment-label {
+      background: #f0f0f0;
+      padding: 1rem 2rem;
+      font-weight: 600;
+      color: #555;
+      border-left: 4px solid #0066cc;
+      font-size: 0.875rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  </style>
+  <link rel="stylesheet" href="fragments.css">
+</head>
+<body>
+  <div class="preview-header">
+    <h1>StenTech Liferay DXP Fragments Preview</h1>
+    <p>Manufacturing Excellence - Fragment Collection</p>
+  </div>
+  
+  <div class="fragment-demo">
+    <div class="fragment-label">Fragment: Hero with Video Background</div>
+    <div class="stentech-hero">
+      <div class="hero-video-container">
+        <div class="hero-overlay"></div>
+      </div>
+      
+      <div class="hero-content">
+        <div class="container">
+          <h1 class="hero-headline">
+            Helping electronic manufacturers run sharper, print cleaner, perform better.
+          </h1>
+          <a href="#products" class="hero-cta">Discover</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="fragment-demo">
+    <div class="fragment-label">Fragment: Product Grid with Icons</div>
+    <div class="stentech-product-grid">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-subtitle">INNOVATIVE PROBLEM SOLVERS</h3>
+          <h2 class="section-title">A fully integrated suite of solutions to streamline your production.</h2>
+        </div>
+        
+        <div class="product-grid" id="product-grid">
+          <a href="#machining" class="product-card">
+            <div class="product-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect x="12" y="20" width="40" height="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="20" cy="34" r="3" fill="currentColor"/>
+                <line x1="28" y1="28" x2="48" y2="28" stroke="currentColor" stroke-width="2"/>
+                <line x1="28" y1="34" x2="48" y2="34" stroke="currentColor" stroke-width="2"/>
+                <line x1="28" y1="40" x2="48" y2="40" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Machining</h3>
+          </a>
+          
+          <a href="#stencils" class="product-card">
+            <div class="product-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="18" width="44" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="20" cy="32" r="2" fill="currentColor"/>
+                <circle cx="32" cy="32" r="2" fill="currentColor"/>
+                <circle cx="44" cy="32" r="2" fill="currentColor"/>
+                <line x1="10" y1="28" x2="54" y2="28" stroke="currentColor" stroke-width="1"/>
+                <line x1="10" y1="36" x2="54" y2="36" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Stencils</h3>
+          </a>
+          
+          <a href="#locations" class="product-card">
+            <div class="product-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 10 C 22 10, 16 16, 16 26 C 16 36, 32 54, 32 54 C 32 54, 48 36, 48 26 C 48 16, 42 10, 32 10 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="26" r="5" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Locations</h3>
+          </a>
+          
+          <a href="#company" class="product-card">
+            <div class="product-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" y="12" width="28" height="40" fill="none" stroke="currentColor" stroke-width="2"/>
+                <rect x="24" y="20" width="6" height="6" fill="currentColor"/>
+                <rect x="34" y="20" width="6" height="6" fill="currentColor"/>
+                <rect x="24" y="30" width="6" height="6" fill="currentColor"/>
+                <rect x="34" y="30" width="6" height="6" fill="currentColor"/>
+                <rect x="28" y="42" width="8" height="10" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Company</h3>
+          </a>
+          
+          <a href="#parts" class="product-card">
+            <div class="product-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="32" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                <line x1="32" y1="18" x2="32" y2="22" stroke="currentColor" stroke-width="2"/>
+                <line x1="32" y1="42" x2="32" y2="46" stroke="currentColor" stroke-width="2"/>
+                <line x1="18" y1="32" x2="22" y2="32" stroke="currentColor" stroke-width="2"/>
+                <line x1="42" y1="32" x2="46" y2="32" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Parts</h3>
+          </a>
+          
+          <a href="#tooling" class="product-card">
+            <div class="product-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 40 L 28 32 L 20 24 L 12 32 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M36 24 L 44 16 L 52 24 L 44 32 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="28" cy="32" r="2" fill="currentColor"/>
+                <circle cx="44" cy="24" r="2" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Tooling</h3>
+          </a>
+          
+          <a href="#online-ordering" class="product-card">
+            <div class="product-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect x="14" y="18" width="36" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                <line x1="14" y1="26" x2="50" y2="26" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="36" r="4" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Online Ordering</h3>
+          </a>
+          
+          <a href="#resources" class="product-card">
+            <div class="product-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 14 L 32 14 L 38 20 L 38 50 L 16 50 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M32 14 L 32 20 L 38 20" fill="none" stroke="currentColor" stroke-width="2"/>
+                <line x1="22" y1="28" x2="32" y2="28" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="22" y1="34" x2="32" y2="34" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="22" y1="40" x2="32" y2="40" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Resources</h3>
+          </a>
+          
+          <a href="#coatings" class="product-card">
+            <div class="product-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28 12 L 36 12 L 36 20 L 42 20 L 32 48 L 22 20 L 28 20 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <ellipse cx="32" cy="52" rx="16" ry="4" fill="currentColor" opacity="0.3"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Coatings</h3>
+          </a>
+          
+          <a href="#quotes" class="product-card">
+            <div class="product-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 18 L 52 18 L 52 42 L 32 42 L 22 52 L 22 42 L 12 42 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <line x1="20" y1="28" x2="44" y2="28" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="20" y1="34" x2="38" y2="34" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Get Quotes</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="fragment-demo">
+    <div class="fragment-label">Fragment: Statistics Counter</div>
+    <div class="stentech-statistics">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-subtitle">Scalable and proven.</h3>
+          <h2 class="section-title">Strength Where It Matters.</h2>
+        </div>
+        
+        <div class="stats-grid" id="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-target="21">21+</div>
+            <div class="stat-label">LOCATIONS</div>
+            <p class="stat-description">across three countries, delivering unmatched speed, redundancy, capacity, and flexibility.</p>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-number" data-target="90">90+</div>
+            <div class="stat-label">CAD DESIGNERS</div>
+            <p class="stat-description">experts dedicated to pushing the boundaries of design and engineering</p>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-number" data-target="350">350+</div>
+            <div class="stat-label">TEAM MEMBERS</div>
+            <p class="stat-description">experienced production and support teams, with a profound understanding of the surface mount assembly process from start to finish.</p>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-number" data-target="3500">3500+</div>
+            <div class="stat-label">CUSTOMERS</div>
+            <p class="stat-description">we set the industry standard for precision, reliability, and speed to ensure success for every customer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="fragment-demo">
+    <div class="fragment-label">Fragment: Feature Section with Image (Right)</div>
+    <div class="stentech-feature-section">
+      <div class="container">
+        <div class="feature-content" data-image-position="right">
+          <div class="feature-text">
+            <h3 class="feature-subtitle">Speed. Stability. Trust.</h3>
+            <h2 class="feature-title">When Every Second Counts, We Deliver.</h2>
+            <p class="feature-description">With state-of-the-art facilities across North America and a growing global presence, we ensure fast, local, and reliable production, offering the delivery speed, responsiveness, and operational continuity you need, including same, or next-day SMT stencil turnaround, while minimizing risk and downtime.</p>
+          </div>
+          <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop" alt="Manufacturing Excellence" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="fragment-demo">
+    <div class="fragment-label">Fragment: Feature Section with Image (Left)</div>
+    <div class="stentech-feature-section">
+      <div class="container">
+        <div class="feature-content" data-image-position="left">
+          <div class="feature-text">
+            <h3 class="feature-subtitle">Exclusively StenTech.</h3>
+            <h2 class="feature-title">Innovation You Can't Get Anywhere Else.</h2>
+            <p class="feature-description">StenTech is the only provider in North America offering exclusive advanced SMT stencil coatings, delivering industry-leading performance, solder paste release, and print precision. We're also the sole U.S.-based source for the most complex paste, flux, epoxy, and specialty material printing solutions.</p>
+          </div>
+          <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=800&h=600&fit=crop" alt="Innovation" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="fragment-demo">
+    <div class="fragment-label">Fragment: Testimonial Carousel</div>
+    <div class="stentech-testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Client Testimonials</h2>
+        </div>
+        
+        <div class="testimonial-carousel" id="testimonial-carousel">
+          <div class="testimonial-track">
+            <div class="testimonial-item">
+              <p class="testimonial-text">We have been doing business with StenTech for over 3 years and have never had a complaint. StenTech has always provided a quick and prompt on time delivery. The employees are always a pleasure to communicate with and their professionalism and quality-first mentality definitely carry over to their product.</p>
+              <div class="testimonial-author">
+                <strong>Billy Klinger</strong>
+                <span>Circuit Technology Inc.</span>
+              </div>
+            </div>
+            
+            <div class="testimonial-item">
+              <p class="testimonial-text">I would like to express what a great job StenTech in Austin has done for Silicon Hills Design over last few years. All stencils orders have been on time and some times I can get a stencil the same day. All the guys have performed detailed work and have been able to create paste layers when customers cannot provide them.</p>
+              <div class="testimonial-author">
+                <strong>Mark Estorga</strong>
+                <span>Silicon Hills Design, Inc.</span>
+              </div>
+            </div>
+            
+            <div class="testimonial-item">
+              <p class="testimonial-text">StenTech has a history of quick turnaround and dependable quality. They have always been helpful with diligent and professional service on special requests such as rush orders, custom stencil framing, reframing, and special designs for glue printing or pin through paste applications.</p>
+              <div class="testimonial-author">
+                <strong>Christian Morining</strong>
+                <span>M.Sc.A., President, Optimont Inc.</span>
+              </div>
+            </div>
+            
+            <div class="testimonial-item">
+              <p class="testimonial-text">A+++ Excellence Service! Best overall service we have had when ordering any of StenTech product line over the past 5 years of dealing with them. Next day delivery on stencils, this is superior against other stencil houses I have ordered from.</p>
+              <div class="testimonial-author">
+                <strong>Mark Martin</strong>
+                <span>Assistant Engineering Manager, BEI Electronics</span>
+              </div>
+            </div>
+            
+            <div class="testimonial-item">
+              <p class="testimonial-text">StenTech service and customer focus are unparalleled. Very fast turnarounds, even when rushed, and prices that are very competitive. Your ability to solve our cutting plate problems (CNC milling services) was impressive.</p>
+              <div class="testimonial-author">
+                <strong>R. Doucet</strong>
+                <span>Process Engineer, CAE Inc.</span>
+              </div>
+            </div>
+            
+            <div class="testimonial-item">
+              <p class="testimonial-text">I'm happy to tell you that your service thus far has been excellent. The quality of your stencils have helped tighten our processes and your turnaround time has kept our customers happy. Overall, the experience has exceeded our expectations.</p>
+              <div class="testimonial-author">
+                <strong>Tom Ferrin</strong>
+                <span>Techfabrik, Inc.</span>
+              </div>
+            </div>
+          </div>
+          
+          <button class="carousel-btn prev" aria-label="Previous testimonial">‹</button>
+          <button class="carousel-btn next" aria-label="Next testimonial">›</button>
+          
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="fragment-demo">
+    <div class="fragment-label">Fragment: Call-to-Action Section</div>
+    <div class="stentech-cta-section" id="cta-section">
+      <div class="container">
+        <div class="cta-header">
+          <h2 class="cta-title">Your Online Ordering Hub.</h2>
+          <p class="cta-description">StenTech makes stencil ordering fast and easy with our online system, reducing processing time by 20% and enabling faster turnaround. Saved customer profiles eliminate errors and redundant steps, while digital ordering reduces paperwork and supports a more optimized workflow.</p>
+        </div>
+        
+        <div class="cta-buttons">
+          <div class="cta-card">
+            <div class="cta-label">SMT STENCILS</div>
+            <a href="/online-ordering" class="cta-btn primary">Order Now</a>
+          </div>
+          
+          <div class="cta-card">
+            <div class="cta-label">MACHINING, TOOLING & PARTS</div>
+            <a href="/get-a-quote" class="cta-btn secondary">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="fragments.js"></script>
+</body>
+</html>

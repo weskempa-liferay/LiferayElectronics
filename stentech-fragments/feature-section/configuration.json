@@ -1,0 +1,50 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "subtitle",
+          "label": "Section Subtitle",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Speed. Stability. Trust."
+        },
+        {
+          "name": "title",
+          "label": "Section Title",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "When Every Second Counts, We Deliver."
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "With state-of-the-art facilities across North America and a growing global presence, we ensure fast, local, and reliable production, offering the delivery speed, responsiveness, and operational continuity you need."
+        },
+        {
+          "name": "imageUrl",
+          "label": "Feature Image URL",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": ""
+        },
+        {
+          "name": "imagePosition",
+          "label": "Image Position",
+          "description": "Position of image (left or right)",
+          "type": "select",
+          "dataType": "string",
+          "defaultValue": "right",
+          "typeOptions": {
+            "validValues": [
+              {"value": "left", "label": "Left"},
+              {"value": "right", "label": "Right"}
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
