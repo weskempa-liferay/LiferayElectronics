@@ -1,6 +1,6 @@
 # StenTech Liferay DXP Fragment Collection
 
-A comprehensive collection of custom Liferay DXP fragments designed for the StenTech public website. This fragment collection provides modern, industrial-styled UI components that showcase StenTech's manufacturing excellence, innovation, and customer commitment.
+A comprehensive collection of custom Liferay DXP fragments designed for StenTech's public website and intranet. This fragment collection provides modern, industrial-styled UI components that showcase StenTech's manufacturing excellence, innovation, and customer commitment, plus intranet tools for HR and Operations teams.
 
 ## Overview
 
@@ -74,6 +74,52 @@ This fragment collection brings their brand to life with professional, responsiv
 - Auto-updating copyright year
 - Configurable company description and contact details
 - **Location:** `stentech-fragments/footer/`
+
+### Intranet Fragments (5)
+
+The collection also includes fragments for logged-in employee experiences:
+
+### 9. **News Article List**
+- Browse published news articles with keyword search
+- Category filtering (Company, HR, Operations, Safety)
+- Combined search and category filters
+- Responsive article cards with metadata
+- Designed for employees like Marcos (Operations) to stay informed
+- **Location:** `stentech-fragments/news-article-list/`
+
+### 10. **News Article Detail**
+- Full article view with rich content formatting
+- Author information and publish date
+- Email sharing and print functionality
+- Related articles section
+- Configurable category badges
+- **Location:** `stentech-fragments/news-article-detail/`
+
+### 11. **Article Publisher**
+- Create and publish news articles
+- Rich text editor with formatting toolbar
+- Category selection and tagging
+- Featured image upload
+- Draft management system
+- Designed for Jennifer (HR) to publish company updates
+- **Location:** `stentech-fragments/article-publisher/`
+
+### 12. **Policy Document Viewer**
+- Browse company policies by category
+- Keyword search across policies
+- Version tracking display
+- Categorized by HR, Safety, Operations
+- For all employees to access company guidelines
+- **Location:** `stentech-fragments/policy-viewer/`
+
+### 13. **Policy Manager**
+- Upload and manage policy documents
+- Version control and effective dates
+- Approval workflow tracking
+- Recent updates dashboard
+- PDF/DOC file upload support
+- Designed for Jennifer (HR) to maintain policies
+- **Location:** `stentech-fragments/policy-manager/`
 
 ## Liferay DXP Structure
 
