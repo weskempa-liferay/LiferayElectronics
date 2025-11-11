@@ -6,12 +6,27 @@
       </h2>
     </div>
     
-    <div class="news-filters ${(configuration.showFilters)?then('', 'hidden')}" data-fragment-namespace="${fragmentEntryLinkNamespace}">
-      <button class="filter-btn active" data-category="all">All News</button>
-      <button class="filter-btn" data-category="company">Company News</button>
-      <button class="filter-btn" data-category="hr">HR Updates</button>
-      <button class="filter-btn" data-category="operations">Operations</button>
-      <button class="filter-btn" data-category="safety">Safety & Compliance</button>
+    <div class="search-filter-bar" data-fragment-namespace="${fragmentEntryLinkNamespace}">
+      <div class="search-box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input 
+          type="search" 
+          class="search-input" 
+          placeholder="Search articles..."
+          id="article-search"
+        />
+      </div>
+      
+      <div class="news-filters ${(configuration.showFilters)?then('', 'hidden')}">
+        <button class="filter-btn active" data-category="all">All News</button>
+        <button class="filter-btn" data-category="company">Company News</button>
+        <button class="filter-btn" data-category="hr">HR Updates</button>
+        <button class="filter-btn" data-category="operations">Operations</button>
+        <button class="filter-btn" data-category="safety">Safety & Compliance</button>
+      </div>
     </div>
     
     <div class="news-grid" data-articles-per-page="${configuration.articlesPerPage!'6'}">
