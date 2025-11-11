@@ -1,6 +1,7 @@
 {
   "fieldSets": [
     {
+      "label": "Section Settings",
       "fields": [
         {
           "name": "sectionTitle",
@@ -9,6 +10,84 @@
           "type": "text",
           "dataType": "string",
           "defaultValue": "Client Testimonials"
+        }
+      ]
+    },
+    {
+      "label": "Testimonial 1",
+      "fields": [
+        {
+          "name": "testimonial1Text",
+          "label": "Testimonial Text",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "We have been doing business with StenTech for over 3 years and have never had a complaint. StenTech has always provided a quick and prompt on time delivery. The employees are always a pleasure to communicate with and their professionalism and quality-first mentality definitely carry over to their product."
+        },
+        {
+          "name": "testimonial1Author",
+          "label": "Author Name",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Billy Klinger"
+        },
+        {
+          "name": "testimonial1Company",
+          "label": "Company/Title",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Circuit Technology Inc."
+        }
+      ]
+    },
+    {
+      "label": "Testimonial 2",
+      "fields": [
+        {
+          "name": "testimonial2Text",
+          "label": "Testimonial Text",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "I would like to express what a great job StenTech in Austin has done for Silicon Hills Design over last few years. All stencils orders have been on time and some times I can get a stencil the same day. All the guys have performed detailed work and have been able to create paste layers when customers cannot provide them."
+        },
+        {
+          "name": "testimonial2Author",
+          "label": "Author Name",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Mark Estorga"
+        },
+        {
+          "name": "testimonial2Company",
+          "label": "Company/Title",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Silicon Hills Design, Inc."
+        }
+      ]
+    },
+    {
+      "label": "Testimonial 3",
+      "fields": [
+        {
+          "name": "testimonial3Text",
+          "label": "Testimonial Text",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "StenTech has a history of quick turnaround and dependable quality. They have always been helpful with diligent and professional service on special requests such as rush orders, custom stencil framing, reframing, and special designs for glue printing or pin through paste applications."
+        },
+        {
+          "name": "testimonial3Author",
+          "label": "Author Name",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Christian Morining"
+        },
+        {
+          "name": "testimonial3Company",
+          "label": "Company/Title",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "M.Sc.A., President, Optimont Inc."
         }
       ]
     }

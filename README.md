@@ -90,14 +90,20 @@ fragment-name/
 
 ### Fragment Configuration
 
-All fragments include JSON configuration files that allow content editors to customize:
+All fragments use **Liferay FreeMarker template syntax** for dynamic content:
+- **Configuration values:** `${configuration.fieldName!'Default Value'}` syntax
+- **Editable text regions:** `data-lfr-editable-id` and `data-lfr-editable-type` attributes for inline editing
+- **Conditional rendering:** `[#if configuration.condition]...[/#if]` for dynamic behavior
+
+Configuration files allow content editors to customize:
 - Text content (headlines, descriptions, labels)
 - URLs and links
 - Image sources
-- Layout options
+- Layout options (e.g., image position, sticky header)
 - Display preferences
+- Testimonials and statistics
 
-This makes the fragments flexible and reusable without code changes.
+This makes the fragments fully configuration-driven and reusable without code changes.
 
 ## Brand Colors & Design System
 

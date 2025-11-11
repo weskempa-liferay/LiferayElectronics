@@ -49,17 +49,19 @@ Contains 8 production-ready Liferay fragments:
 ## Technical Details
 
 ### Liferay Fragment Structure
-Each fragment follows standard Liferay conventions:
+Each fragment follows standard Liferay DXP conventions:
 - `fragment.json` - Fragment metadata
-- `configuration.json` - Editable configuration fields (where applicable)
-- `index.html` - Fragment markup with Liferay placeholders
+- `configuration.json` - Editable configuration fields with structured fieldsets
+- `index.html` - Fragment markup with FreeMarker template syntax
 - `styles.css` - Scoped CSS styling
 - `main.js` - Vanilla JavaScript for interactions
 
 ### Key Implementation Notes
+- **FreeMarker Syntax:** All dynamic values use `${configuration.fieldName!'Default Value'}` syntax for configuration-driven content
+- **Editable Regions:** Text areas use `data-lfr-editable-id` and `data-lfr-editable-type` attributes for inline editing in Liferay Page Editor
 - **JavaScript Pattern:** Uses `const rootElement = fragmentElement || document.querySelector(...)` to properly handle Liferay's fragmentElement parameter
 - **No Dependencies:** Pure HTML/CSS/JS for maximum compatibility
-- **Configuration-Driven:** All fragments support content editing through Liferay UI
+- **Configuration-Driven:** All fragments fully editable through Liferay configuration panels
 - **Responsive:** Mobile-first design with clamp() for fluid typography
 - **Animations:** Intersection Observer API for scroll-triggered effects
 
@@ -102,6 +104,14 @@ README.md                    # Full documentation
 
 ## Recent Changes
 
+### November 11, 2025
+- ✅ **CRITICAL UPDATE:** Converted all fragments to use proper Liferay FreeMarker syntax
+- ✅ All dynamic values now use `${configuration.*}` with default values
+- ✅ Added editable regions with `data-lfr-editable-*` attributes for inline text editing
+- ✅ Updated all configuration.json files to align with HTML templates
+- ✅ Testimonial carousel now configuration-driven with 3 testimonials
+- ✅ All fragments validated and architect-approved for Liferay DXP import
+
 ### November 10, 2025
 - ✅ Created complete fragment collection with 8 fragments
 - ✅ Added Header Navigation fragment with comprehensive keyboard accessibility
@@ -109,10 +119,7 @@ README.md                    # Full documentation
 - ✅ Implemented full ARIA support (aria-expanded, aria-haspopup, aria-controls, aria-modal)
 - ✅ Added keyboard navigation for dropdowns (Enter/Space/Arrow/Escape keys)
 - ✅ Implemented focus trapping for mobile menu with Tab key cycling
-- ✅ Added blur handlers for proper dropdown closure
-- ✅ All fragments architect-reviewed and production-ready
-- ✅ Updated preview system to showcase all 8 fragments
-- ✅ Updated comprehensive documentation
+- ✅ All fragments production-ready with proper Liferay syntax
 
 ## Quality Assurance
 
