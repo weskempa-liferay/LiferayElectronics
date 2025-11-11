@@ -39,7 +39,6 @@
           "label": "Sticky Header",
           "description": "Make header stick to top on scroll",
           "type": "checkbox",
-          "dataType": "bool",
           "defaultValue": true
         }
       ]

@@ -1,4 +1,4 @@
-<header class="stentech-header[#if configuration.stickyHeader!true] sticky[/#if]" data-fragment-namespace="${fragmentEntryLinkNamespace}">
+<header class="stentech-header [#if configuration.stickyHeader!true]sticky[/#if]" data-fragment-namespace="${fragmentEntryLinkNamespace}">
   <div class="header-container">
     <div class="header-logo">
       <a href="/">
@@ -45,6 +45,17 @@
       <button class="mobile-menu-toggle" aria-label="Toggle menu">
         <span class="hamburger"></span>
       </button>
+     
+        <div class="nav-item">
+					<div class="user-language-fragment">
+						 [@liferay_ui["language"]/]
+					</div>
+        </div>
+        <div class="nav-item">
+					<div class="user-personal-bar-fragment">
+						[@liferay.user_personal_bar /]
+					</div>
+        </div>
     </div>
   </div>
   

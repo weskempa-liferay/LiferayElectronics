@@ -10,8 +10,7 @@
   position: sticky;
   top: 0;
 }
-
-.header-container {
+.stentech-header .header-container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 2rem;
@@ -21,31 +20,31 @@
   gap: 2rem;
 }
 
-.header-logo a {
+.stentech-header .header-logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
 
-.logo-image {
+.stentech-header .logo-image {
   height: 48px;
   width: auto;
 }
 
-.logo-text {
+.stentech-header .logo-text {
   font-size: 1.75rem;
   font-weight: 700;
   color: #003366;
   letter-spacing: -0.5px;
 }
 
-.header-nav {
+.stentech-header .header-nav {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.nav-menu {
+.stentech-header .nav-menu {
   display: flex;
   list-style: none;
   margin: 0;
@@ -53,11 +52,11 @@
   gap: 0.5rem;
 }
 
-.nav-item {
+.stentech-header .nav-item {
   position: relative;
 }
 
-.nav-link {
+.stentech-header .nav-link {
   display: block;
   padding: 0.75rem 1rem;
   color: #003366;
@@ -68,12 +67,12 @@
   border-radius: 6px;
 }
 
-.nav-link:hover {
+.stentech-header .nav-link:hover {
   color: #ff6b35;
   background: rgba(0, 102, 204, 0.05);
 }
 
-.dropdown-menu {
+.stentech-header .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -89,14 +88,14 @@
   z-index: 100;
 }
 
-.nav-item:hover .dropdown-menu,
-.dropdown-menu.open {
+.stentech-header .nav-item:hover .dropdown-menu,
+.stentech-header .dropdown-menu.open {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-.dropdown-item {
+.stentech-header .dropdown-item {
   display: block;
   padding: 0.75rem 1.5rem;
   color: #555;
@@ -105,18 +104,18 @@
   transition: all 0.2s ease;
 }
 
-.dropdown-item:hover {
+.stentech-header .dropdown-item:hover {
   color: #ff6b35;
   background: rgba(0, 102, 204, 0.05);
 }
 
-.header-actions {
+.stentech-header .header-actions {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.header-cta {
+.stentech-header .header-cta {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
@@ -129,12 +128,12 @@
   box-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
 }
 
-.header-cta:hover {
+.stentech-header .header-cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
 }
 
-.mobile-menu-toggle {
+.stentech-header .mobile-menu-toggle {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -147,7 +146,7 @@
   padding: 0;
 }
 
-.hamburger {
+.stentech-header .hamburger {
   width: 24px;
   height: 2px;
   background: #003366;
@@ -155,8 +154,8 @@
   transition: all 0.3s ease;
 }
 
-.hamburger::before,
-.hamburger::after {
+.stentech-header .hamburger::before,
+.stentech-header .hamburger::after {
   content: '';
   position: absolute;
   width: 24px;
@@ -165,29 +164,29 @@
   transition: all 0.3s ease;
 }
 
-.hamburger::before {
+.stentech-header .hamburger::before {
   top: -8px;
 }
 
-.hamburger::after {
+.stentech-header .hamburger::after {
   top: 8px;
 }
 
-.mobile-menu-toggle.active .hamburger {
+.stentech-header .mobile-menu-toggle.active .hamburger {
   background: transparent;
 }
 
-.mobile-menu-toggle.active .hamburger::before {
+.stentech-header .mobile-menu-toggle.active .hamburger::before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.mobile-menu-toggle.active .hamburger::after {
+.stentech-header .mobile-menu-toggle.active .hamburger::after {
   top: 0;
   transform: rotate(-45deg);
 }
 
-.mobile-menu {
+.stentech-header .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -201,12 +200,12 @@
   z-index: 999;
 }
 
-.mobile-menu.active {
+.stentech-header .mobile-menu.active {
   opacity: 1;
   visibility: visible;
 }
 
-.mobile-menu-content {
+.stentech-header .mobile-menu-content {
   padding: 6rem 2rem 2rem;
   max-width: 400px;
   margin: 0 auto;
@@ -215,7 +214,7 @@
   gap: 0.5rem;
 }
 
-.mobile-nav-link {
+.stentech-header .mobile-nav-link {
   display: block;
   padding: 1rem;
   color: #ffffff;
@@ -226,18 +225,18 @@
   transition: all 0.2s ease;
 }
 
-.mobile-nav-link:hover {
+.stentech-header .mobile-nav-link:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #ff8c42;
 }
 
-.mobile-nav-link.submenu-item {
+.stentech-header .mobile-nav-link.submenu-item {
   padding-left: 2rem;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.85);
 }
 
-.mobile-nav-cta {
+.stentech-header .mobile-nav-cta {
   display: block;
   margin-top: 1rem;
   padding: 1rem;
@@ -251,34 +250,34 @@
   transition: all 0.3s ease;
 }
 
-.mobile-nav-cta:hover {
+.stentech-header .mobile-nav-cta:hover {
   transform: scale(1.05);
 }
 
 @media (max-width: 968px) {
-  .header-nav {
+  .stentech-header .header-nav {
     display: none;
   }
   
-  .header-cta {
+  .stentech-header .header-cta {
     display: none;
   }
   
-  .mobile-menu-toggle {
+  .stentech-header .mobile-menu-toggle {
     display: flex;
   }
 }
 
 @media (max-width: 480px) {
-  .header-container {
+  .stentech-header .header-container {
     padding: 1rem 1.5rem;
   }
   
-  .logo-text {
+  .stentech-header .logo-text {
     font-size: 1.5rem;
   }
   
-  .logo-image {
+  .stentech-header .logo-image {
     height: 40px;
   }
 }
