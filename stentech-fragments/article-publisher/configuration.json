@@ -1,0 +1,24 @@
+{
+  "fieldSets": [
+    {
+      "label": "Publisher Settings",
+      "fields": [
+        {
+          "name": "pageTitle",
+          "label": "Page Title",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Publish News Article"
+        },
+        {
+          "name": "showDrafts",
+          "label": "Show Draft Articles List",
+          "description": "Display list of draft articles below the form",
+          "type": "checkbox",
+          "dataType": "bool",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}

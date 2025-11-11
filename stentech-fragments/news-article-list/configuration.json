@@ -1,0 +1,41 @@
+{
+  "fieldSets": [
+    {
+      "label": "Display Settings",
+      "fields": [
+        {
+          "name": "sectionTitle",
+          "label": "Section Title",
+          "description": "Heading for the news articles section",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Latest News & Updates"
+        },
+        {
+          "name": "articlesPerPage",
+          "label": "Articles Per Page",
+          "description": "Number of articles to display",
+          "type": "select",
+          "dataType": "string",
+          "defaultValue": "6",
+          "typeOptions": {
+            "validValues": [
+              {"label": "3 Articles", "value": "3"},
+              {"label": "6 Articles", "value": "6"},
+              {"label": "9 Articles", "value": "9"},
+              {"label": "12 Articles", "value": "12"}
+            ]
+          }
+        },
+        {
+          "name": "showFilters",
+          "label": "Show Category Filters",
+          "description": "Display category filter buttons",
+          "type": "checkbox",
+          "dataType": "bool",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}

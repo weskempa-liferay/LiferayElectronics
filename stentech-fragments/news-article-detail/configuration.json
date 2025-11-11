@@ -1,0 +1,57 @@
+{
+  "fieldSets": [
+    {
+      "label": "Article Metadata",
+      "fields": [
+        {
+          "name": "articleCategory",
+          "label": "Category",
+          "type": "select",
+          "dataType": "string",
+          "defaultValue": "company",
+          "typeOptions": {
+            "validValues": [
+              {"label": "Company News", "value": "company"},
+              {"label": "HR Updates", "value": "hr"},
+              {"label": "Operations", "value": "operations"},
+              {"label": "Safety & Compliance", "value": "safety"}
+            ]
+          }
+        },
+        {
+          "name": "publishDate",
+          "label": "Publish Date",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "November 10, 2025"
+        },
+        {
+          "name": "authorName",
+          "label": "Author Name",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Jennifer Martinez"
+        },
+        {
+          "name": "authorTitle",
+          "label": "Author Title",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "HR Manager"
+        }
+      ]
+    },
+    {
+      "label": "Display Options",
+      "fields": [
+        {
+          "name": "showRelatedArticles",
+          "label": "Show Related Articles",
+          "type": "checkbox",
+          "dataType": "bool",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}

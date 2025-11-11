@@ -1,0 +1,103 @@
+<div class="stentech-news-list">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title" data-lfr-editable-id="section-title" data-lfr-editable-type="rich-text">
+        ${configuration.sectionTitle!'Latest News & Updates'}
+      </h2>
+    </div>
+    
+    <div class="news-filters ${(configuration.showFilters)?then('', 'hidden')}" data-fragment-namespace="${fragmentEntryLinkNamespace}">
+      <button class="filter-btn active" data-category="all">All News</button>
+      <button class="filter-btn" data-category="company">Company News</button>
+      <button class="filter-btn" data-category="hr">HR Updates</button>
+      <button class="filter-btn" data-category="operations">Operations</button>
+      <button class="filter-btn" data-category="safety">Safety & Compliance</button>
+    </div>
+    
+    <div class="news-grid" data-articles-per-page="${configuration.articlesPerPage!'6'}">
+      <article class="news-card" data-category="company" data-date="2025-11-10">
+        <div class="news-card-header">
+          <span class="news-category">Company News</span>
+          <time class="news-date" datetime="2025-11-10">Nov 10, 2025</time>
+        </div>
+        <h3 class="news-title">StenTech Opens 22nd Location in Phoenix</h3>
+        <p class="news-excerpt">We're excited to announce the opening of our newest facility in Phoenix, Arizona, expanding our manufacturing capabilities across the southwestern United States.</p>
+        <div class="news-meta">
+          <span class="news-author">Posted by Jennifer Martinez, HR</span>
+          <a href="#" class="news-link">Read More →</a>
+        </div>
+      </article>
+      
+      <article class="news-card" data-category="hr" data-date="2025-11-08">
+        <div class="news-card-header">
+          <span class="news-category">HR Updates</span>
+          <time class="news-date" datetime="2025-11-08">Nov 8, 2025</time>
+        </div>
+        <h3 class="news-title">2025 Benefits Enrollment Now Open</h3>
+        <p class="news-excerpt">Open enrollment for health insurance, dental, vision, and 401(k) benefits is now available. Please review your options and submit your selections by November 30th.</p>
+        <div class="news-meta">
+          <span class="news-author">Posted by Jennifer Martinez, HR</span>
+          <a href="#" class="news-link">Read More →</a>
+        </div>
+      </article>
+      
+      <article class="news-card" data-category="operations" data-date="2025-11-05">
+        <div class="news-card-header">
+          <span class="news-category">Operations</span>
+          <time class="news-date" datetime="2025-11-05">Nov 5, 2025</time>
+        </div>
+        <h3 class="news-title">New Quality Control Procedures for SMT Stencils</h3>
+        <p class="news-excerpt">Updated QC protocols have been implemented across all production facilities to ensure the highest quality standards for our SMT stencil manufacturing process.</p>
+        <div class="news-meta">
+          <span class="news-author">Posted by Operations Team</span>
+          <a href="#" class="news-link">Read More →</a>
+        </div>
+      </article>
+      
+      <article class="news-card" data-category="safety" data-date="2025-11-03">
+        <div class="news-card-header">
+          <span class="news-category">Safety & Compliance</span>
+          <time class="news-date" datetime="2025-11-03">Nov 3, 2025</time>
+        </div>
+        <h3 class="news-title">Monthly Safety Training - November Schedule</h3>
+        <p class="news-excerpt">All production staff are required to complete monthly safety training. Sessions are scheduled throughout November at each facility location.</p>
+        <div class="news-meta">
+          <span class="news-author">Posted by Safety Department</span>
+          <a href="#" class="news-link">Read More →</a>
+        </div>
+      </article>
+      
+      <article class="news-card" data-category="company" data-date="2025-11-01">
+        <div class="news-card-header">
+          <span class="news-category">Company News</span>
+          <time class="news-date" datetime="2025-11-01">Nov 1, 2025</time>
+        </div>
+        <h3 class="news-title">Q3 2025 Performance Awards Announced</h3>
+        <p class="news-excerpt">Congratulations to our outstanding team members who received performance awards for their exceptional contributions during Q3 2025.</p>
+        <div class="news-meta">
+          <span class="news-author">Posted by Jennifer Martinez, HR</span>
+          <a href="#" class="news-link">Read More →</a>
+        </div>
+      </article>
+      
+      <article class="news-card" data-category="hr" data-date="2025-10-28">
+        <div class="news-card-header">
+          <span class="news-category">HR Updates</span>
+          <time class="news-date" datetime="2025-10-28">Oct 28, 2025</time>
+        </div>
+        <h3 class="news-title">Updated PTO Policy for 2026</h3>
+        <p class="news-excerpt">Review the updated Paid Time Off policy effective January 1, 2026. The new policy includes additional flexibility and improved carryover provisions.</p>
+        <div class="news-meta">
+          <span class="news-author">Posted by Jennifer Martinez, HR</span>
+          <a href="#" class="news-link">Read More →</a>
+        </div>
+      </article>
+    </div>
+    
+    <div class="pagination">
+      <button class="pagination-btn" disabled>← Previous</button>
+      <span class="pagination-info">Page 1 of 1</span>
+      <button class="pagination-btn" disabled>Next →</button>
+    </div>
+  </div>
+</div>
