@@ -1,5 +1,5 @@
 {
   "name": "StenTech Fragments",
-  "description": "Custom Liferay DXP fragments for StenTech public site",
+  "description": "Custom Liferay DXP fragments for StenTech public website and intranet experiences",
   "fragmentCollectionKey": "stentech-fragments"
 }

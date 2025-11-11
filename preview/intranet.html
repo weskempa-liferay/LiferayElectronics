@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StenTech Intranet Fragments Preview</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #f8f9fa;
+    }
+    
+    .preview-header {
+      background: linear-gradient(135deg, #003366, #0066cc);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    
+    .preview-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .preview-header p {
+      font-size: 1.25rem;
+      opacity: 0.95;
+    }
+    
+    .preview-nav {
+      background: white;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .preview-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .preview-nav a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    
+    .preview-nav a:hover {
+      color: #0066cc;
+    }
+    
+    .fragment-section {
+      padding: 0;
+      background: #f8f9fa;
+    }
+    
+    .section-label {
+      background: white;
+      padding: 1.5rem;
+      margin: 2rem 1.5rem 0 1.5rem;
+      border-radius: 12px 12px 0 0;
+      border-bottom: 3px solid #0066cc;
+    }
+    
+    .section-label h2 {
+      color: #003366;
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .section-label p {
+      color: #666;
+      font-size: 1rem;
+    }
+    
+    .fragment-container {
+      margin: 0 1.5rem 3rem 1.5rem;
+      background: white;
+      border-radius: 0 0 12px 12px;
+      overflow: hidden;
+    }
+  </style>
+  <link rel="stylesheet" href="../stentech-fragments/news-article-list/styles.css">
+  <link rel="stylesheet" href="../stentech-fragments/news-article-detail/styles.css">
+  <link rel="stylesheet" href="../stentech-fragments/article-publisher/styles.css">
+  <link rel="stylesheet" href="../stentech-fragments/policy-viewer/styles.css">
+  <link rel="stylesheet" href="../stentech-fragments/policy-manager/styles.css">
+</head>
+<body>
+  <div class="preview-header">
+    <h1>🏢 StenTech Intranet Fragments</h1>
+    <p>Logged-in experiences for HR and Operations teams</p>
+  </div>
+  
+  <nav class="preview-nav">
+    <ul>
+      <li><a href="index.html">Public Site Fragments</a></li>
+      <li><a href="#news-list">News List</a></li>
+      <li><a href="#news-detail">News Detail</a></li>
+      <li><a href="#article-publisher">Article Publisher</a></li>
+      <li><a href="#policy-viewer">Policy Viewer</a></li>
+      <li><a href="#policy-manager">Policy Manager</a></li>
+    </ul>
+  </nav>
+  
+  <section id="news-list" class="fragment-section">
+    <div class="section-label">
+      <h2>📰 News Article List</h2>
+      <p>For employees like Marcos (Operations) to browse company news and updates</p>
+    </div>
+    <div class="fragment-container" data-fragment="news-article-list"></div>
+  </section>
+  
+  <section id="news-detail" class="fragment-section">
+    <div class="section-label">
+      <h2>📄 News Article Detail</h2>
+      <p>Full article view with rich content and related articles</p>
+    </div>
+    <div class="fragment-container" data-fragment="news-article-detail"></div>
+  </section>
+  
+  <section id="article-publisher" class="fragment-section">
+    <div class="section-label">
+      <h2>✍️ Article Publisher</h2>
+      <p>For Jennifer (HR) to create and publish news articles and announcements</p>
+    </div>
+    <div class="fragment-container" data-fragment="article-publisher"></div>
+  </section>
+  
+  <section id="policy-viewer" class="fragment-section">
+    <div class="section-label">
+      <h2>📋 Policy Document Viewer</h2>
+      <p>For all employees to access company policies and procedures</p>
+    </div>
+    <div class="fragment-container" data-fragment="policy-viewer"></div>
+  </section>
+  
+  <section id="policy-manager" class="fragment-section">
+    <div class="section-label">
+      <h2>🗂️ Policy Manager</h2>
+      <p>For Jennifer (HR) to upload and manage policy documents</p>
+    </div>
+    <div class="fragment-container" data-fragment="policy-manager"></div>
+  </section>
+  
+  <script type="module">
+    async function loadFragment(container, fragmentName) {
+      const basePath = `../stentech-fragments/${fragmentName}`;
+      
+      try {
+        const [htmlResponse, jsResponse] = await Promise.all([
+          fetch(`${basePath}/index.html`),
+          fetch(`${basePath}/main.js`)
+        ]);
+        
+        const html = await htmlResponse.text();
+        const js = await jsResponse.text();
+        
+        container.innerHTML = html;
+        
+        const cleanedJs = js.replace(/\(function\(fragmentElement\)\s*{/, '(function() {')
+                            .replace(/}\)\(typeof fragmentElement[^)]+\);?/, `})()`);
+        
+        const script = document.createElement('script');
+        script.textContent = cleanedJs;
+        document.body.appendChild(script);
+      } catch (error) {
+        console.error(`Error loading fragment ${fragmentName}:`, error);
+        container.innerHTML = `<p style="padding: 2rem; color: #dc3545;">Error loading fragment: ${fragmentName}</p>`;
+      }
+    }
+    
+    const containers = document.querySelectorAll('[data-fragment]');
+    containers.forEach(container => {
+      const fragmentName = container.getAttribute('data-fragment');
+      loadFragment(container, fragmentName);
+    });
+  </script>
+</body>
+</html>

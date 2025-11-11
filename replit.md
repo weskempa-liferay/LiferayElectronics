@@ -8,17 +8,24 @@ This project contains a complete collection of custom Liferay DXP fragments desi
 **Created:** November 10, 2025
 
 ## Purpose
-Create professional, reusable UI fragments for StenTech's public website that showcase their:
+Create professional, reusable UI fragments for StenTech's public website and intranet:
+
+**Public Website:**
 - Manufacturing excellence and innovation
 - Industry leadership with 21+ locations across North America
 - Customer commitment with 3500+ satisfied clients
 - Technical expertise with 90+ CAD designers and 350+ team members
 
+**Intranet (Logged-in Experiences):**
+- Jennifer (HR Manager) - Publishes news articles and company policies
+- Marcos (Operations Supervisor) - Accesses news articles and policy documents
+
 ## Project Structure
 
 ### Fragment Collection (`stentech-fragments/`)
-Contains 8 production-ready Liferay fragments:
+Contains 13 production-ready Liferay fragments:
 
+**Public Website Fragments (8):**
 1. **Hero with Video Background** - Full-screen hero section with video support
 2. **Product Grid with Icons** - Animated grid for product/service categories
 3. **Statistics Counter** - Scroll-triggered animated counters for key metrics
@@ -28,8 +35,16 @@ Contains 8 production-ready Liferay fragments:
 7. **Header Navigation** - Sticky header with dropdown menus and mobile support
 8. **Footer** - Comprehensive footer with company info and social links
 
+**Intranet Fragments (5):**
+9. **News Article List** - Browse published news articles with category filtering (for Marcos/readers)
+10. **News Article Detail** - Full article view with rich content and sharing options
+11. **Article Publisher** - Create and publish news articles with rich text editor (for Jennifer/HR)
+12. **Policy Document Viewer** - Browse company policies with search and categorization (for all employees)
+13. **Policy Manager** - Upload and manage policy documents with version tracking (for Jennifer/HR)
+
 ### Preview System (`preview/`)
-- Live preview of all fragments in action
+- `index.html` - Live preview of public website fragments
+- `intranet.html` - Live preview of intranet fragments for HR/Operations
 - Combined CSS and JavaScript for demonstration
 - Served via Python HTTP server on port 5000
 
@@ -105,12 +120,17 @@ README.md                    # Full documentation
 ## Recent Changes
 
 ### November 11, 2025
-- ✅ **CRITICAL UPDATE:** Converted all fragments to use proper Liferay FreeMarker syntax
+- ✅ **NEW: Intranet fragments created** - 5 fragments for logged-in HR and Operations experiences
+- ✅ **News Article List** - Filterable news feed with category badges
+- ✅ **News Article Detail** - Full article view with sharing and related articles
+- ✅ **Article Publisher** - Rich text editor form for Jennifer to create articles
+- ✅ **Policy Document Viewer** - Searchable policy library with version tracking
+- ✅ **Policy Manager** - Policy upload and management tool for Jennifer
+- ✅ **CRITICAL UPDATE:** Converted all public fragments to use proper Liferay FreeMarker syntax
 - ✅ All dynamic values now use `${configuration.*}` with default values
 - ✅ Added editable regions with `data-lfr-editable-*` attributes for inline text editing
 - ✅ Updated all configuration.json files to align with HTML templates
 - ✅ Testimonial carousel now configuration-driven with 3 testimonials
-- ✅ All fragments validated and architect-approved for Liferay DXP import
 
 ### November 10, 2025
 - ✅ Created complete fragment collection with 8 fragments
