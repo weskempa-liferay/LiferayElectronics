@@ -1,0 +1,8 @@
+{
+  "cssPath": "styles.css",
+  "htmlPath": "index.html",
+  "jsPath": "main.js",
+  "configurationPath": "configuration.json",
+  "name": "Agent Dashboard",
+  "type": "component"
+}

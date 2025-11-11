@@ -1,0 +1,22 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "rating",
+          "label": "Average Rating",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "4.5"
+        },
+        {
+          "name": "reviewCount",
+          "label": "Total Reviews",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "3468"
+        }
+      ]
+    }
+  ]
+}

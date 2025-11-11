@@ -1,0 +1,30 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "featureImage",
+          "label": "Feature Image",
+          "type": "itemSelector",
+          "typeOptions": {
+            "itemType": "Document"
+          },
+          "dataType": "object"
+        },
+        {
+          "name": "imagePosition",
+          "label": "Image Position",
+          "type": "select",
+          "dataType": "string",
+          "defaultValue": "left",
+          "typeOptions": {
+            "validValues": [
+              {"value": "left", "label": "Left"},
+              {"value": "right", "label": "Right"}
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

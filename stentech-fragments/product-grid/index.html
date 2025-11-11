@@ -1,8 +1,12 @@
 <div class="stentech-product-grid">
   <div class="container">
     <div class="section-header">
-      <h3 class="section-subtitle">[#sectionSubtitle/]</h3>
-      <h2 class="section-title">[#sectionTitle/]</h2>
+      <h3 class="section-subtitle" data-lfr-editable-id="section-subtitle" data-lfr-editable-type="text">
+        ${configuration.sectionSubtitle!'Products & Services'}
+      </h3>
+      <h2 class="section-title" data-lfr-editable-id="section-title" data-lfr-editable-type="rich-text">
+        ${configuration.sectionTitle!'What We Offer'}
+      </h2>
     </div>
     
     <div class="product-grid" data-fragment-namespace="${fragmentEntryLinkNamespace}">

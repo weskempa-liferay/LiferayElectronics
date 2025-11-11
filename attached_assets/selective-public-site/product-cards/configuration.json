@@ -1,0 +1,16 @@
+{
+  "fieldSets": [
+    {
+      "label": "Section Settings",
+      "fields": [
+        {
+          "name": "sectionTitle",
+          "label": "Section Title",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "HOW TO BE UNIQUELY INSURED®"
+        }
+      ]
+    }
+  ]
+}

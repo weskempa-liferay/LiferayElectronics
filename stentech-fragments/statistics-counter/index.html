@@ -1,33 +1,45 @@
 <div class="stentech-statistics">
   <div class="container">
     <div class="section-header">
-      <h3 class="section-subtitle">[#sectionSubtitle/]</h3>
-      <h2 class="section-title">[#sectionTitle/]</h2>
+      <h3 class="section-subtitle" data-lfr-editable-id="section-subtitle" data-lfr-editable-type="text">
+        ${configuration.sectionSubtitle!'Numbers That Matter'}
+      </h3>
+      <h2 class="section-title" data-lfr-editable-id="section-title" data-lfr-editable-type="rich-text">
+        ${configuration.sectionTitle!'Delivering Excellence Across North America'}
+      </h2>
     </div>
     
     <div class="stats-grid" data-fragment-namespace="${fragmentEntryLinkNamespace}">
       <div class="stat-item">
-        <div class="stat-number" data-target="[#stat1Number/]">[#stat1Number/]</div>
-        <div class="stat-label">[#stat1Label/]</div>
-        <p class="stat-description">[#stat1Description/]</p>
+        <div class="stat-number" data-target="${configuration.stat1Number!'21'}">${configuration.stat1Number!'21'}</div>
+        <div class="stat-label">${configuration.stat1Label!'Locations'}</div>
+        <p class="stat-description" data-lfr-editable-id="stat1-description" data-lfr-editable-type="text">
+          ${configuration.stat1Description!'Across North America'}
+        </p>
       </div>
       
       <div class="stat-item">
-        <div class="stat-number" data-target="[#stat2Number/]">[#stat2Number/]</div>
-        <div class="stat-label">[#stat2Label/]</div>
-        <p class="stat-description">[#stat2Description/]</p>
+        <div class="stat-number" data-target="${configuration.stat2Number!'350'}">${configuration.stat2Number!'350'}</div>
+        <div class="stat-label">${configuration.stat2Label!'Team Members'}</div>
+        <p class="stat-description" data-lfr-editable-id="stat2-description" data-lfr-editable-type="text">
+          ${configuration.stat2Description!'Dedicated professionals'}
+        </p>
       </div>
       
       <div class="stat-item">
-        <div class="stat-number" data-target="[#stat3Number/]">[#stat3Number/]</div>
-        <div class="stat-label">[#stat3Label/]</div>
-        <p class="stat-description">[#stat3Description/]</p>
+        <div class="stat-number" data-target="${configuration.stat3Number!'3500'}">${configuration.stat3Number!'3500'}</div>
+        <div class="stat-label">${configuration.stat3Label!'Customers'}</div>
+        <p class="stat-description" data-lfr-editable-id="stat3-description" data-lfr-editable-type="text">
+          ${configuration.stat3Description!'Worldwide partnerships'}
+        </p>
       </div>
       
       <div class="stat-item">
-        <div class="stat-number" data-target="[#stat4Number/]">[#stat4Number/]</div>
-        <div class="stat-label">[#stat4Label/]</div>
-        <p class="stat-description">[#stat4Description/]</p>
+        <div class="stat-number" data-target="${configuration.stat4Number!'90'}">${configuration.stat4Number!'90'}</div>
+        <div class="stat-label">${configuration.stat4Label!'CAD Designers'}</div>
+        <p class="stat-description" data-lfr-editable-id="stat4-description" data-lfr-editable-type="text">
+          ${configuration.stat4Description!'Technical expertise'}
+        </p>
       </div>
     </div>
   </div>

@@ -1,0 +1,45 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "agentName",
+          "label": "Agent Name",
+          "description": "Display name for the logged-in agent",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "John Smith"
+        },
+        {
+          "name": "agentId",
+          "label": "Agent ID",
+          "description": "Agent identification number",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "AG-12345"
+        },
+        {
+          "name": "showQuickStats",
+          "label": "Show Quick Stats",
+          "description": "Display the quick statistics cards",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "showRecentActivity",
+          "label": "Show Recent Activity",
+          "description": "Display the recent activity feed",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "showQuickActions",
+          "label": "Show Quick Actions",
+          "description": "Display quick action buttons",
+          "type": "checkbox",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}

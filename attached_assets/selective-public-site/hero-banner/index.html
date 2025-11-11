@@ -1,0 +1,45 @@
+<div class="selective-hero-banner">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-headline" data-lfr-editable-id="headline" data-lfr-editable-type="rich-text">
+      ${configuration.headlineText!'BE UNIQUELY INSURED.'}
+    </h1>
+    
+    [#if configuration.showAgentFinder!true]
+    <div class="agent-finder-card">
+      <form class="agent-finder-form" id="agentFinderForm" novalidate>
+        <div class="form-group">
+          <label for="zipCode" class="sr-only">Zip Code</label>
+          <input 
+            type="text" 
+            id="zipCode" 
+            name="zipCode" 
+            class="form-control zip-input" 
+            placeholder="Zip Code"
+            pattern="[0-9]{5}"
+            maxlength="5"
+            required
+            aria-describedby="zipCodeError"
+          />
+          <span class="error-message" id="zipCodeError" role="alert"></span>
+        </div>
+        
+        <div class="form-group">
+          <label for="productInterest" class="sr-only">Product Of Interest</label>
+          <select id="productInterest" name="productInterest" class="form-control product-select">
+            <option value="">Product Of Interest</option>
+            <option value="home">Home</option>
+            <option value="auto">Auto</option>
+            <option value="business">Business</option>
+            <option value="flood">Flood</option>
+          </select>
+        </div>
+        
+        <button type="submit" class="btn btn-primary find-agent-btn">
+          Find an Agent
+        </button>
+      </form>
+    </div>
+    [/#if]
+  </div>
+</div>

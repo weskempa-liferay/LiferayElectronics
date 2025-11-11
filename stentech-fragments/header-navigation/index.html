@@ -1,11 +1,11 @@
-<header class="stentech-header[#if stickyHeader] sticky[/#if]" data-fragment-namespace="${fragmentEntryLinkNamespace}">
+<header class="stentech-header[#if configuration.stickyHeader!true] sticky[/#if]" data-fragment-namespace="${fragmentEntryLinkNamespace}">
   <div class="header-container">
     <div class="header-logo">
       <a href="/">
-        [#if logoUrl??]
-          <img src="[#logoUrl/]" alt="[#logoText/]" class="logo-image">
+        [#if configuration.logoUrl??]
+          <img src="${configuration.logoUrl}" alt="${configuration.logoText!'StenTech'}" class="logo-image">
         [#else]
-          <span class="logo-text">[#logoText/]</span>
+          <span class="logo-text">${configuration.logoText!'StenTech'}</span>
         [/#if]
       </a>
     </div>
@@ -41,7 +41,7 @@
     </nav>
     
     <div class="header-actions">
-      <a href="[#ctaUrl/]" class="header-cta">[#ctaText/]</a>
+      <a href="${configuration.ctaUrl!'#quote'}" class="header-cta">${configuration.ctaText!'Get Quote'}</a>
       <button class="mobile-menu-toggle" aria-label="Toggle menu">
         <span class="hamburger"></span>
       </button>
@@ -61,7 +61,7 @@
       <a href="/learning/resources" class="mobile-nav-link">Resources</a>
       <a href="/online-ordering" class="mobile-nav-link">Online Ordering</a>
       <a href="/contact/contact-us" class="mobile-nav-link">Contact</a>
-      <a href="[#ctaUrl/]" class="mobile-nav-cta">[#ctaText/]</a>
+      <a href="${configuration.ctaUrl!'#quote'}" class="mobile-nav-cta">${configuration.ctaText!'Get Quote'}</a>
     </div>
   </div>
 </header>

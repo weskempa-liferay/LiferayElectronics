@@ -1,13 +1,19 @@
 <div class="stentech-feature-section" data-fragment-namespace="${fragmentEntryLinkNamespace}">
   <div class="container">
-    <div class="feature-content" data-image-position="[#imagePosition/]">
+    <div class="feature-content ${(configuration.imagePosition == 'right')?then('reverse', '')}">
       <div class="feature-text">
-        <h3 class="feature-subtitle">[#subtitle/]</h3>
-        <h2 class="feature-title">[#title/]</h2>
-        <p class="feature-description">[#description/]</p>
+        <h3 class="feature-subtitle" data-lfr-editable-id="subtitle" data-lfr-editable-type="text">
+          ${configuration.subtitle!'Industry Leadership'}
+        </h3>
+        <h2 class="feature-title" data-lfr-editable-id="title" data-lfr-editable-type="rich-text">
+          ${configuration.title!'Precision Engineering Since 1986'}
+        </h2>
+        <p class="feature-description" data-lfr-editable-id="description" data-lfr-editable-type="rich-text">
+          ${configuration.description!'At StenTech, we combine cutting-edge technology with decades of expertise to deliver unparalleled precision in SMT stencils, machining, and custom components.'}
+        </p>
       </div>
       <div class="feature-image">
-        <img src="[#imageUrl/]" alt="[#title/]" loading="lazy">
+        <img src="${configuration.imageUrl!'https://via.placeholder.com/600x400'}" alt="${configuration.title!'Feature'}" loading="lazy">
       </div>
     </div>
   </div>

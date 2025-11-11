@@ -1,0 +1,8 @@
+{
+  "cssPath": "styles.css",
+  "htmlPath": "index.html",
+  "jsPath": "main.js",
+  "name": "Product Showcase Cards",
+  "type": "component",
+  "configurationPath": "configuration.json"
+}

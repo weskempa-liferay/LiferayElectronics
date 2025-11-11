@@ -1,0 +1,16 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "sectionTitle",
+          "label": "Section Title",
+          "description": "Testimonials section heading",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Client Testimonials"
+        }
+      ]
+    }
+  ]
+}

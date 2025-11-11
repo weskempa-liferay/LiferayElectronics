@@ -1,0 +1,34 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "headlineText",
+          "label": "Headline Text",
+          "type": "text",
+          "typeOptions": {
+            "placeholder": "BE UNIQUELY INSURED."
+          },
+          "dataType": "string",
+          "defaultValue": "BE UNIQUELY INSURED."
+        },
+        {
+          "name": "backgroundImage",
+          "label": "Background Image",
+          "type": "itemSelector",
+          "typeOptions": {
+            "itemType": "Document"
+          },
+          "dataType": "object"
+        },
+        {
+          "name": "showAgentFinder",
+          "label": "Show Agent Finder",
+          "type": "checkbox",
+          "dataType": "object",
+          "defaultValue": "true"
+        }
+      ]
+    }
+  ]
+}
