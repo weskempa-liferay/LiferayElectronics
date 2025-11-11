@@ -14,7 +14,6 @@
           "name": "showSearch",
           "label": "Show Search Bar",
           "type": "checkbox",
-          "dataType": "bool",
           "defaultValue": true
         },
         {
@@ -22,7 +21,6 @@
           "label": "Group by Category",
           "description": "Display policies grouped by category",
           "type": "checkbox",
-          "dataType": "bool",
           "defaultValue": true
         }
       ]

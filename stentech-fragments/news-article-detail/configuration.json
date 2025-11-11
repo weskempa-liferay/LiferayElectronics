@@ -48,7 +48,6 @@
           "name": "showRelatedArticles",
           "label": "Show Related Articles",
           "type": "checkbox",
-          "dataType": "bool",
           "defaultValue": true
         }
       ]

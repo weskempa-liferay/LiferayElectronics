@@ -32,7 +32,6 @@
           "label": "Show Category Filters",
           "description": "Display category filter buttons",
           "type": "checkbox",
-          "dataType": "bool",
           "defaultValue": true
         }
       ]

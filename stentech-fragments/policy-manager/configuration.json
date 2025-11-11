@@ -15,7 +15,6 @@
           "label": "Show Recent Updates",
           "description": "Display list of recently updated policies",
           "type": "checkbox",
-          "dataType": "bool",
           "defaultValue": true
         }
       ]

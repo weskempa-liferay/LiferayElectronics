@@ -15,7 +15,6 @@
           "label": "Show Draft Articles List",
           "description": "Display list of draft articles below the form",
           "type": "checkbox",
-          "dataType": "bool",
           "defaultValue": true
         }
       ]
