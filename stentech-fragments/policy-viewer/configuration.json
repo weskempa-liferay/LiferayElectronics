@@ -1,0 +1,31 @@
+{
+  "fieldSets": [
+    {
+      "label": "Display Settings",
+      "fields": [
+        {
+          "name": "sectionTitle",
+          "label": "Section Title",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "Company Policies & Procedures"
+        },
+        {
+          "name": "showSearch",
+          "label": "Show Search Bar",
+          "type": "checkbox",
+          "dataType": "bool",
+          "defaultValue": true
+        },
+        {
+          "name": "groupByCategory",
+          "label": "Group by Category",
+          "description": "Display policies grouped by category",
+          "type": "checkbox",
+          "dataType": "bool",
+          "defaultValue": true
+        }
+      ]
+    }
+  ]
+}

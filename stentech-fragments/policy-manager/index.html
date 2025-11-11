@@ -1,0 +1,230 @@
+<div class="stentech-policy-manager">
+  <div class="container">
+    <div class="manager-header">
+      <h1 class="manager-title" data-lfr-editable-id="page-title" data-lfr-editable-type="rich-text">
+        ${configuration.pageTitle!'Manage Company Policies'}
+      </h1>
+      <p class="manager-subtitle">Upload and manage company policy documents</p>
+    </div>
+    
+    <div class="manager-form">
+      <form class="policy-form" data-fragment-namespace="${fragmentEntryLinkNamespace}">
+        <div class="form-group">
+          <label for="policy-title" class="form-label">Policy Title *</label>
+          <input 
+            type="text" 
+            id="policy-title" 
+            class="form-input" 
+            placeholder="e.g., Paid Time Off (PTO) Policy"
+            required
+          />
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="policy-category" class="form-label">Category *</label>
+            <select id="policy-category" class="form-select" required>
+              <option value="">Select category...</option>
+              <option value="hr">Human Resources</option>
+              <option value="safety">Safety & Compliance</option>
+              <option value="operations">Operations</option>
+              <option value="it">IT & Security</option>
+              <option value="finance">Finance & Accounting</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="policy-version" class="form-label">Version Number *</label>
+            <input 
+              type="text" 
+              id="policy-version" 
+              class="form-input"
+              placeholder="e.g., 2.1"
+              required
+            />
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="policy-description" class="form-label">Description *</label>
+          <textarea 
+            id="policy-description" 
+            class="form-textarea" 
+            rows="3"
+            placeholder="Brief description of what this policy covers"
+            required
+          ></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="effective-date" class="form-label">Effective Date *</label>
+          <input 
+            type="date" 
+            id="effective-date" 
+            class="form-input"
+            required
+          />
+        </div>
+        
+        <div class="form-group">
+          <label for="policy-document" class="form-label">Policy Document *</label>
+          <div class="file-upload-zone" id="document-upload">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+            <p>Click to upload policy document</p>
+            <span class="upload-hint">PDF, DOC, or DOCX (max. 10MB)</span>
+            <input type="file" id="policy-document" accept=".pdf,.doc,.docx" hidden />
+          </div>
+          <div class="file-info hidden" id="file-info">
+            <div class="file-details">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/>
+              </svg>
+              <span class="file-name"></span>
+              <span class="file-size"></span>
+            </div>
+            <button type="button" class="remove-file-btn">Remove</button>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label">Policy Approval</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="reviewed-legal" />
+              <span>Reviewed by Legal Department</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="approved-management" />
+              <span>Approved by Management</span>
+            </label>
+          </div>
+        </div>
+        
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" id="save-draft-btn">
+            Save as Draft
+          </button>
+          <button type="button" class="btn btn-primary" id="publish-policy-btn">
+            Publish Policy
+          </button>
+        </div>
+      </form>
+      
+      <div class="success-message hidden" id="success-message">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+        </svg>
+        <span>Policy published successfully!</span>
+      </div>
+    </div>
+    
+    <div class="recent-updates ${(configuration.showRecentUpdates)?then('', 'hidden')}">
+      <h2 class="updates-title">Recently Updated Policies</h2>
+      <div class="updates-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Policy Name</th>
+              <th>Category</th>
+              <th>Version</th>
+              <th>Updated By</th>
+              <th>Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="policy-name-cell">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6z"/>
+                  </svg>
+                  <span>Paid Time Off (PTO) Policy</span>
+                </div>
+              </td>
+              <td><span class="category-badge hr">Human Resources</span></td>
+              <td>v2.1</td>
+              <td>Jennifer Martinez</td>
+              <td>Nov 10, 2025</td>
+              <td>
+                <div class="action-buttons">
+                  <button class="action-btn edit-btn" title="Edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                  </button>
+                  <button class="action-btn archive-btn" title="Archive">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM12 17.5L6.5 12H10v-2h4v2h3.5L12 17.5zM5.12 5l.81-1h12l.94 1H5.12z"/>
+                    </svg>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="policy-name-cell">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6z"/>
+                  </svg>
+                  <span>Quality Control Standards</span>
+                </div>
+              </td>
+              <td><span class="category-badge ops">Operations</span></td>
+              <td>v5.1</td>
+              <td>Jennifer Martinez</td>
+              <td>Nov 5, 2025</td>
+              <td>
+                <div class="action-buttons">
+                  <button class="action-btn edit-btn" title="Edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                  </button>
+                  <button class="action-btn archive-btn" title="Archive">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM12 17.5L6.5 12H10v-2h4v2h3.5L12 17.5zM5.12 5l.81-1h12l.94 1H5.12z"/>
+                    </svg>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="policy-name-cell">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6z"/>
+                  </svg>
+                  <span>Benefits Enrollment Guide</span>
+                </div>
+              </td>
+              <td><span class="category-badge hr">Human Resources</span></td>
+              <td>v1.3</td>
+              <td>Jennifer Martinez</td>
+              <td>Nov 1, 2025</td>
+              <td>
+                <div class="action-buttons">
+                  <button class="action-btn edit-btn" title="Edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                  </button>
+                  <button class="action-btn archive-btn" title="Archive">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM12 17.5L6.5 12H10v-2h4v2h3.5L12 17.5zM5.12 5l.81-1h12l.94 1H5.12z"/>
+                    </svg>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
