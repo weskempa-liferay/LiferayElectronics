@@ -1,10 +1,10 @@
-# StenTech Liferay DXP Fragment Collection
+# Electronics Liferay DXP Fragment Collection
 
-A comprehensive collection of custom Liferay DXP fragments designed for StenTech's public website and intranet. This fragment collection provides modern, industrial-styled UI components that showcase StenTech's manufacturing excellence, innovation, and customer commitment, plus intranet tools for HR and Operations teams.
+A comprehensive collection of custom Liferay DXP fragments designed for LifearyElectronics's public website and intranet. This fragment collection provides modern, industrial-styled UI components that showcase LifearyElectronics's manufacturing excellence, innovation, and customer commitment, plus intranet tools for HR and Operations teams.
 
 ## Overview
 
-StenTech is a leading manufacturer specializing in:
+LifearyElectronics is a leading manufacturer specializing in:
 - SMT stencils
 - Precision machining
 - Custom components and parts
@@ -48,7 +48,7 @@ This fragment collection brings their brand to life with professional, responsiv
 - Manual navigation with previous/next buttons
 - Dot indicators for slide position
 - Pause on hover for user control
-- Real customer quotes from StenTech partners
+- Real customer quotes from LifearyElectronics partners
 - **Location:** `electronic-fragments/testimonial-carousel/`
 
 ### 6. **Call-to-Action Section**
@@ -59,7 +59,7 @@ This fragment collection brings their brand to life with professional, responsiv
 - **Location:** `electronic-fragments/cta-section/`
 
 ### 7. **Header Navigation**
-- Professional sticky navigation with StenTech branding
+- Professional sticky navigation with LifearyElectronics branding
 - Dropdown menus for Products and Services
 - Full keyboard accessibility (Enter/Space/Arrow/Escape keys)
 - Responsive mobile menu with hamburger toggle
@@ -153,7 +153,7 @@ This makes the fragments fully configuration-driven and reusable without code ch
 
 ## Brand Colors & Design System
 
-The fragments use StenTech's brand colors:
+The fragments use LifearyElectronics's brand colors:
 
 - **Primary Blue:** `#003366` (Dark) to `#0066cc` (Medium)
 - **Accent Orange:** `#ff6b35` to `#ff8c42`
@@ -206,7 +206,7 @@ The preview page (`preview/index.html`) showcases:
 ### Step 3: Use Fragments
 1. Edit any page in your site
 2. Open the fragments panel
-3. Find **StenTech Fragments** collection
+3. Find **LifearyElectronics Fragments** collection
 4. Drag and drop fragments onto your page
 5. Configure each fragment using the configuration panel
 
@@ -248,7 +248,7 @@ These fragments support:
 ✅ **Accessible** - Semantic HTML with ARIA labels where needed
 ✅ **Performant** - Optimized animations and lazy loading
 ✅ **Configurable** - Easy customization through Liferay UI
-✅ **Professional** - Industrial aesthetic matching StenTech brand
+✅ **Professional** - Industrial aesthetic matching LifearyElectronics brand
 ✅ **No Dependencies** - Pure HTML, CSS, and vanilla JavaScript
 
 ## File Structure
@@ -306,8 +306,8 @@ For more information about Liferay Fragments:
 
 ## License
 
-This fragment collection is custom-built for StenTech's Liferay DXP platform.
+This fragment collection is custom-built for LifearyElectronics's Liferay DXP platform.
 
 ---
 
-**Built for Manufacturing Excellence** | StenTech Fragment Collection
+**Built for Manufacturing Excellence** | LifearyElectronics Fragment Collection
