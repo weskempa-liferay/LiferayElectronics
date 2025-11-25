@@ -1,4 +1,4 @@
-.stentech-statistics {
+.electronic-statistics {
   padding: 5rem 2rem;
   background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
   color: #ffffff;
@@ -75,7 +75,7 @@
 }
 
 @media (max-width: 768px) {
-  .stentech-statistics {
+  .electronic-statistics {
     padding: 3rem 1.5rem;
   }
   

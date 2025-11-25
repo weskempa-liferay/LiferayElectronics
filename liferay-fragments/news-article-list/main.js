@@ -1,5 +1,5 @@
 (function(fragmentElement) {
-  const rootElement = fragmentElement || document.querySelector('.stentech-news-list');
+  const rootElement = fragmentElement || document.querySelector('.electronic-news-list');
   if (!rootElement) return;
 
   const filterButtons = rootElement.querySelectorAll('.filter-btn');

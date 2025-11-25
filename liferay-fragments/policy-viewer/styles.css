@@ -1,44 +1,44 @@
-.stentech-policy-viewer {
+.electronic-policy-viewer {
   padding: 4rem 0;
   background: #f8f9fa;
   min-height: 100vh;
 }
 
-.stentech-policy-viewer .container {
+.electronic-policy-viewer .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-.stentech-policy-viewer .section-header {
+.electronic-policy-viewer .section-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.stentech-policy-viewer .section-title {
+.electronic-policy-viewer .section-title {
   font-size: clamp(2rem, 4vw, 2.5rem);
   color: #003366;
   margin: 0 0 0.5rem 0;
   font-weight: 700;
 }
 
-.stentech-policy-viewer .section-subtitle {
+.electronic-policy-viewer .section-subtitle {
   color: #666;
   font-size: 1.125rem;
   margin: 0;
 }
 
-.stentech-policy-viewer .search-bar {
+.electronic-policy-viewer .search-bar {
   max-width: 600px;
   margin: 0 auto 3rem auto;
   position: relative;
 }
 
-.stentech-policy-viewer .search-bar.hidden {
+.electronic-policy-viewer .search-bar.hidden {
   display: none;
 }
 
-.stentech-policy-viewer .search-bar svg {
+.electronic-policy-viewer .search-bar svg {
   position: absolute;
   left: 1rem;
   top: 50%;
@@ -46,7 +46,7 @@
   color: #666;
 }
 
-.stentech-policy-viewer .search-input {
+.electronic-policy-viewer .search-input {
   width: 100%;
   padding: 1rem 1rem 1rem 3rem;
   border: 2px solid #e0e0e0;
@@ -55,26 +55,26 @@
   transition: all 0.3s ease;
 }
 
-.stentech-policy-viewer .search-input:focus {
+.electronic-policy-viewer .search-input:focus {
   outline: none;
   border-color: #0066cc;
   box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
 
-.stentech-policy-viewer .policies-container {
+.electronic-policy-viewer .policies-container {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
 
-.stentech-policy-viewer .policy-category {
+.electronic-policy-viewer .policy-category {
   background: white;
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
 }
 
-.stentech-policy-viewer .category-title {
+.electronic-policy-viewer .category-title {
   font-size: 1.5rem;
   color: #003366;
   margin: 0 0 1.5rem 0;
@@ -83,13 +83,13 @@
   border-bottom: 2px solid #e0e0e0;
 }
 
-.stentech-policy-viewer .policy-list {
+.electronic-policy-viewer .policy-list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.stentech-policy-viewer .policy-item {
+.electronic-policy-viewer .policy-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,24 +100,24 @@
   transition: all 0.3s ease;
 }
 
-.stentech-policy-viewer .policy-item.hidden {
+.electronic-policy-viewer .policy-item.hidden {
   display: none;
 }
 
-.stentech-policy-viewer .policy-item:hover {
+.electronic-policy-viewer .policy-item:hover {
   background: white;
   box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
   transform: translateY(-2px);
 }
 
-.stentech-policy-viewer .policy-header {
+.electronic-policy-viewer .policy-header {
   display: flex;
   align-items: center;
   gap: 1.25rem;
   flex: 1;
 }
 
-.stentech-policy-viewer .policy-icon {
+.electronic-policy-viewer .policy-icon {
   width: 56px;
   height: 56px;
   border-radius: 12px;
@@ -128,43 +128,43 @@
   color: white;
 }
 
-.stentech-policy-viewer .hr-icon {
+.electronic-policy-viewer .hr-icon {
   background: linear-gradient(135deg, #0066cc, #003366);
 }
 
-.stentech-policy-viewer .safety-icon {
+.electronic-policy-viewer .safety-icon {
   background: linear-gradient(135deg, #ff6b35, #ff8c42);
 }
 
-.stentech-policy-viewer .ops-icon {
+.electronic-policy-viewer .ops-icon {
   background: linear-gradient(135deg, #28a745, #20c997);
 }
 
-.stentech-policy-viewer .policy-info {
+.electronic-policy-viewer .policy-info {
   flex: 1;
 }
 
-.stentech-policy-viewer .policy-title {
+.electronic-policy-viewer .policy-title {
   font-size: 1.125rem;
   color: #003366;
   margin: 0 0 0.375rem 0;
   font-weight: 600;
 }
 
-.stentech-policy-viewer .policy-description {
+.electronic-policy-viewer .policy-description {
   color: #666;
   margin: 0;
   font-size: 0.938rem;
   line-height: 1.5;
 }
 
-.stentech-policy-viewer .policy-meta {
+.electronic-policy-viewer .policy-meta {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.stentech-policy-viewer .policy-version {
+.electronic-policy-viewer .policy-version {
   padding: 0.375rem 0.875rem;
   background: #e8f2ff;
   color: #0066cc;
@@ -173,13 +173,13 @@
   font-weight: 600;
 }
 
-.stentech-policy-viewer .policy-date {
+.electronic-policy-viewer .policy-date {
   color: #666;
   font-size: 0.875rem;
   white-space: nowrap;
 }
 
-.stentech-policy-viewer .policy-btn {
+.electronic-policy-viewer .policy-btn {
   padding: 0.75rem 1.5rem;
   background: #003366;
   color: white;
@@ -191,43 +191,43 @@
   white-space: nowrap;
 }
 
-.stentech-policy-viewer .policy-btn:hover {
+.electronic-policy-viewer .policy-btn:hover {
   background: #0066cc;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
 }
 
 @media (max-width: 968px) {
-  .stentech-policy-viewer .policy-item {
+  .electronic-policy-viewer .policy-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.25rem;
   }
   
-  .stentech-policy-viewer .policy-meta {
+  .electronic-policy-viewer .policy-meta {
     width: 100%;
     flex-wrap: wrap;
   }
   
-  .stentech-policy-viewer .policy-btn {
+  .electronic-policy-viewer .policy-btn {
     width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .stentech-policy-viewer .policy-category {
+  .electronic-policy-viewer .policy-category {
     padding: 1.5rem;
   }
   
-  .stentech-policy-viewer .policy-item {
+  .electronic-policy-viewer .policy-item {
     padding: 1.25rem;
   }
   
-  .stentech-policy-viewer .policy-header {
+  .electronic-policy-viewer .policy-header {
     gap: 1rem;
   }
   
-  .stentech-policy-viewer .policy-icon {
+  .electronic-policy-viewer .policy-icon {
     width: 48px;
     height: 48px;
   }

@@ -1,4 +1,4 @@
-.stentech-product-grid {
+.electronic-product-grid {
   padding: 5rem 2rem;
   background: #f8f9fa;
 }
@@ -102,7 +102,7 @@
 }
 
 @media (max-width: 768px) {
-  .stentech-product-grid {
+  .electronic-product-grid {
     padding: 3rem 1.5rem;
   }
   

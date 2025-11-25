@@ -1,4 +1,4 @@
-.stentech-testimonials {
+.electronic-testimonials {
   padding: 5rem 2rem;
   background: #f8f9fa;
 }
@@ -130,7 +130,7 @@
 }
 
 @media (max-width: 768px) {
-  .stentech-testimonials {
+  .electronic-testimonials {
     padding: 3rem 1.5rem;
   }
   

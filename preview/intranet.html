@@ -92,11 +92,11 @@
       overflow: hidden;
     }
   </style>
-  <link rel="stylesheet" href="../stentech-fragments/news-article-list/styles.css">
-  <link rel="stylesheet" href="../stentech-fragments/news-article-detail/styles.css">
-  <link rel="stylesheet" href="../stentech-fragments/article-publisher/styles.css">
-  <link rel="stylesheet" href="../stentech-fragments/policy-viewer/styles.css">
-  <link rel="stylesheet" href="../stentech-fragments/policy-manager/styles.css">
+  <link rel="stylesheet" href="../electronic-fragments/news-article-list/styles.css">
+  <link rel="stylesheet" href="../electronic-fragments/news-article-detail/styles.css">
+  <link rel="stylesheet" href="../electronic-fragments/article-publisher/styles.css">
+  <link rel="stylesheet" href="../electronic-fragments/policy-viewer/styles.css">
+  <link rel="stylesheet" href="../electronic-fragments/policy-manager/styles.css">
 </head>
 <body>
   <div class="preview-header">
@@ -157,7 +157,7 @@
   
   <script type="module">
     async function loadFragment(container, fragmentName) {
-      const basePath = `../stentech-fragments/${fragmentName}`;
+      const basePath = `../electronic-fragments/${fragmentName}`;
       
       try {
         const [htmlResponse, jsResponse] = await Promise.all([

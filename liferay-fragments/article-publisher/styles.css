@@ -1,33 +1,33 @@
-.stentech-article-publisher {
+.electronic-article-publisher {
   padding: 3rem 0;
   background: #f8f9fa;
   min-height: 100vh;
 }
 
-.stentech-article-publisher .container {
+.electronic-article-publisher .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-.stentech-article-publisher .publisher-header {
+.electronic-article-publisher .publisher-header {
   margin-bottom: 2.5rem;
 }
 
-.stentech-article-publisher .publisher-title {
+.electronic-article-publisher .publisher-title {
   font-size: clamp(2rem, 4vw, 2.5rem);
   color: #003366;
   margin: 0 0 0.5rem 0;
   font-weight: 700;
 }
 
-.stentech-article-publisher .publisher-subtitle {
+.electronic-article-publisher .publisher-subtitle {
   color: #666;
   font-size: 1.125rem;
   margin: 0;
 }
 
-.stentech-article-publisher .publisher-form {
+.electronic-article-publisher .publisher-form {
   background: white;
   padding: 2.5rem;
   border-radius: 12px;
@@ -35,33 +35,33 @@
   margin-bottom: 3rem;
 }
 
-.stentech-article-publisher .article-form {
+.electronic-article-publisher .article-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.stentech-article-publisher .form-row {
+.electronic-article-publisher .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
 
-.stentech-article-publisher .form-group {
+.electronic-article-publisher .form-group {
   display: flex;
   flex-direction: column;
 }
 
-.stentech-article-publisher .form-label {
+.electronic-article-publisher .form-label {
   font-weight: 600;
   color: #003366;
   margin-bottom: 0.5rem;
   font-size: 0.938rem;
 }
 
-.stentech-article-publisher .form-input,
-.stentech-article-publisher .form-select,
-.stentech-article-publisher .form-textarea {
+.electronic-article-publisher .form-input,
+.electronic-article-publisher .form-select,
+.electronic-article-publisher .form-textarea {
   padding: 0.875rem 1rem;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
@@ -70,26 +70,26 @@
   transition: all 0.3s ease;
 }
 
-.stentech-article-publisher .form-input:focus,
-.stentech-article-publisher .form-select:focus,
-.stentech-article-publisher .form-textarea:focus {
+.electronic-article-publisher .form-input:focus,
+.electronic-article-publisher .form-select:focus,
+.electronic-article-publisher .form-textarea:focus {
   outline: none;
   border-color: #0066cc;
   box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
 
-.stentech-article-publisher .form-textarea {
+.electronic-article-publisher .form-textarea {
   resize: vertical;
   min-height: 100px;
 }
 
-.stentech-article-publisher .form-hint {
+.electronic-article-publisher .form-hint {
   font-size: 0.875rem;
   color: #666;
   margin-top: 0.375rem;
 }
 
-.stentech-article-publisher .editor-toolbar {
+.electronic-article-publisher .editor-toolbar {
   display: flex;
   gap: 0.5rem;
   padding: 0.75rem;
@@ -99,7 +99,7 @@
   border-radius: 8px 8px 0 0;
 }
 
-.stentech-article-publisher .toolbar-btn {
+.electronic-article-publisher .toolbar-btn {
   width: 36px;
   height: 36px;
   background: white;
@@ -113,18 +113,18 @@
   font-size: 0.875rem;
 }
 
-.stentech-article-publisher .toolbar-btn:hover {
+.electronic-article-publisher .toolbar-btn:hover {
   background: #003366;
   color: white;
   border-color: #003366;
 }
 
-.stentech-article-publisher .content-editor {
+.electronic-article-publisher .content-editor {
   border-radius: 0 0 8px 8px;
   border-top: none;
 }
 
-.stentech-article-publisher .file-upload-zone {
+.electronic-article-publisher .file-upload-zone {
   border: 2px dashed #e0e0e0;
   border-radius: 8px;
   padding: 2rem;
@@ -134,28 +134,28 @@
   color: #666;
 }
 
-.stentech-article-publisher .file-upload-zone:hover {
+.electronic-article-publisher .file-upload-zone:hover {
   border-color: #0066cc;
   background: #f8fbff;
 }
 
-.stentech-article-publisher .file-upload-zone svg {
+.electronic-article-publisher .file-upload-zone svg {
   color: #0066cc;
   margin-bottom: 1rem;
 }
 
-.stentech-article-publisher .file-upload-zone p {
+.electronic-article-publisher .file-upload-zone p {
   margin: 0.5rem 0;
   font-weight: 600;
   color: #003366;
 }
 
-.stentech-article-publisher .upload-hint {
+.electronic-article-publisher .upload-hint {
   font-size: 0.875rem;
   color: #999;
 }
 
-.stentech-article-publisher .form-actions {
+.electronic-article-publisher .form-actions {
   display: flex;
   gap: 1rem;
   justify-content: flex-end;
@@ -164,7 +164,7 @@
   border-top: 1px solid #e0e0e0;
 }
 
-.stentech-article-publisher .btn {
+.electronic-article-publisher .btn {
   padding: 0.875rem 2rem;
   border: none;
   border-radius: 8px;
@@ -174,28 +174,28 @@
   transition: all 0.3s ease;
 }
 
-.stentech-article-publisher .btn-primary {
+.electronic-article-publisher .btn-primary {
   background: #003366;
   color: white;
 }
 
-.stentech-article-publisher .btn-primary:hover {
+.electronic-article-publisher .btn-primary:hover {
   background: #0066cc;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
 }
 
-.stentech-article-publisher .btn-secondary {
+.electronic-article-publisher .btn-secondary {
   background: white;
   color: #003366;
   border: 2px solid #003366;
 }
 
-.stentech-article-publisher .btn-secondary:hover {
+.electronic-article-publisher .btn-secondary:hover {
   background: #f8f9fa;
 }
 
-.stentech-article-publisher .success-message {
+.electronic-article-publisher .success-message {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -208,39 +208,39 @@
   margin-top: 1.5rem;
 }
 
-.stentech-article-publisher .success-message.hidden {
+.electronic-article-publisher .success-message.hidden {
   display: none;
 }
 
-.stentech-article-publisher .success-message svg {
+.electronic-article-publisher .success-message svg {
   flex-shrink: 0;
 }
 
-.stentech-article-publisher .drafts-section {
+.electronic-article-publisher .drafts-section {
   background: white;
   padding: 2.5rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
 }
 
-.stentech-article-publisher .drafts-section.hidden {
+.electronic-article-publisher .drafts-section.hidden {
   display: none;
 }
 
-.stentech-article-publisher .drafts-title {
+.electronic-article-publisher .drafts-title {
   font-size: 1.5rem;
   color: #003366;
   margin: 0 0 1.5rem 0;
   font-weight: 700;
 }
 
-.stentech-article-publisher .drafts-list {
+.electronic-article-publisher .drafts-list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.stentech-article-publisher .draft-item {
+.electronic-article-publisher .draft-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -251,29 +251,29 @@
   transition: all 0.3s ease;
 }
 
-.stentech-article-publisher .draft-item:hover {
+.electronic-article-publisher .draft-item:hover {
   background: #fff;
   box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
 }
 
-.stentech-article-publisher .draft-info {
+.electronic-article-publisher .draft-info {
   flex: 1;
 }
 
-.stentech-article-publisher .draft-title {
+.electronic-article-publisher .draft-title {
   font-size: 1.125rem;
   color: #003366;
   margin: 0 0 0.5rem 0;
   font-weight: 600;
 }
 
-.stentech-article-publisher .draft-meta {
+.electronic-article-publisher .draft-meta {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-.stentech-article-publisher .draft-category {
+.electronic-article-publisher .draft-category {
   display: inline-block;
   padding: 0.25rem 0.625rem;
   background: #e8f2ff;
@@ -284,17 +284,17 @@
   text-transform: uppercase;
 }
 
-.stentech-article-publisher .draft-date {
+.electronic-article-publisher .draft-date {
   color: #666;
   font-size: 0.875rem;
 }
 
-.stentech-article-publisher .draft-actions {
+.electronic-article-publisher .draft-actions {
   display: flex;
   gap: 0.75rem;
 }
 
-.stentech-article-publisher .draft-btn {
+.electronic-article-publisher .draft-btn {
   padding: 0.625rem 1.25rem;
   border: none;
   border-radius: 6px;
@@ -304,55 +304,55 @@
   transition: all 0.3s ease;
 }
 
-.stentech-article-publisher .edit-btn {
+.electronic-article-publisher .edit-btn {
   background: #0066cc;
   color: white;
 }
 
-.stentech-article-publisher .edit-btn:hover {
+.electronic-article-publisher .edit-btn:hover {
   background: #003366;
 }
 
-.stentech-article-publisher .delete-btn {
+.electronic-article-publisher .delete-btn {
   background: white;
   color: #dc3545;
   border: 2px solid #dc3545;
 }
 
-.stentech-article-publisher .delete-btn:hover {
+.electronic-article-publisher .delete-btn:hover {
   background: #dc3545;
   color: white;
 }
 
 @media (max-width: 768px) {
-  .stentech-article-publisher .publisher-form,
-  .stentech-article-publisher .drafts-section {
+  .electronic-article-publisher .publisher-form,
+  .electronic-article-publisher .drafts-section {
     padding: 1.5rem;
   }
   
-  .stentech-article-publisher .form-row {
+  .electronic-article-publisher .form-row {
     grid-template-columns: 1fr;
   }
   
-  .stentech-article-publisher .form-actions {
+  .electronic-article-publisher .form-actions {
     flex-direction: column-reverse;
   }
   
-  .stentech-article-publisher .btn {
+  .electronic-article-publisher .btn {
     width: 100%;
   }
   
-  .stentech-article-publisher .draft-item {
+  .electronic-article-publisher .draft-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
   
-  .stentech-article-publisher .draft-actions {
+  .electronic-article-publisher .draft-actions {
     width: 100%;
   }
   
-  .stentech-article-publisher .draft-btn {
+  .electronic-article-publisher .draft-btn {
     flex: 1;
   }
 }

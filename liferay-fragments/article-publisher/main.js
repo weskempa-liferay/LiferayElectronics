@@ -1,5 +1,5 @@
 (function(fragmentElement) {
-  const rootElement = fragmentElement || document.querySelector('.stentech-article-publisher');
+  const rootElement = fragmentElement || document.querySelector('.electronic-article-publisher');
   if (!rootElement) return;
 
   const form = rootElement.querySelector('.article-form');

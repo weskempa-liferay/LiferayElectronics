@@ -1,37 +1,37 @@
-.stentech-news-list {
+.electronic-news-list {
   padding: 4rem 0;
   background: #f8f9fa;
 }
 
-.stentech-news-list .container {
+.electronic-news-list .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-.stentech-news-list .section-header {
+.electronic-news-list .section-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.stentech-news-list .section-title {
+.electronic-news-list .section-title {
   font-size: clamp(2rem, 4vw, 2.5rem);
   color: #003366;
   margin: 0;
   font-weight: 700;
 }
 
-.stentech-news-list .search-filter-bar {
+.electronic-news-list .search-filter-bar {
   margin-bottom: 3rem;
 }
 
-.stentech-news-list .search-box {
+.electronic-news-list .search-box {
   max-width: 600px;
   margin: 0 auto 2rem auto;
   position: relative;
 }
 
-.stentech-news-list .search-box svg {
+.electronic-news-list .search-box svg {
   position: absolute;
   left: 1rem;
   top: 50%;
@@ -40,7 +40,7 @@
   pointer-events: none;
 }
 
-.stentech-news-list .search-input {
+.electronic-news-list .search-input {
   width: 100%;
   padding: 1rem 1rem 1rem 3rem;
   border: 2px solid #e0e0e0;
@@ -49,24 +49,24 @@
   transition: all 0.3s ease;
 }
 
-.stentech-news-list .search-input:focus {
+.electronic-news-list .search-input:focus {
   outline: none;
   border-color: #0066cc;
   box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
 
-.stentech-news-list .news-filters {
+.electronic-news-list .news-filters {
   display: flex;
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.stentech-news-list .news-filters.hidden {
+.electronic-news-list .news-filters.hidden {
   display: none;
 }
 
-.stentech-news-list .filter-btn {
+.electronic-news-list .filter-btn {
   padding: 0.75rem 1.5rem;
   background: white;
   border: 2px solid #e0e0e0;
@@ -77,25 +77,25 @@
   transition: all 0.3s ease;
 }
 
-.stentech-news-list .filter-btn:hover {
+.electronic-news-list .filter-btn:hover {
   border-color: #0066cc;
   background: #f0f7ff;
 }
 
-.stentech-news-list .filter-btn.active {
+.electronic-news-list .filter-btn.active {
   background: #003366;
   color: white;
   border-color: #003366;
 }
 
-.stentech-news-list .news-grid {
+.electronic-news-list .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
 }
 
-.stentech-news-list .news-card {
+.electronic-news-list .news-card {
   background: white;
   border-radius: 12px;
   padding: 1.5rem;
@@ -106,23 +106,23 @@
   border: 1px solid #e0e0e0;
 }
 
-.stentech-news-list .news-card:hover {
+.electronic-news-list .news-card:hover {
   box-shadow: 0 8px 24px rgba(0, 51, 102, 0.15);
   transform: translateY(-4px);
 }
 
-.stentech-news-list .news-card.hidden {
+.electronic-news-list .news-card.hidden {
   display: none;
 }
 
-.stentech-news-list .news-card-header {
+.electronic-news-list .news-card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
 }
 
-.stentech-news-list .news-category {
+.electronic-news-list .news-category {
   display: inline-block;
   padding: 0.375rem 0.875rem;
   background: #ff6b35;
@@ -134,12 +134,12 @@
   letter-spacing: 0.5px;
 }
 
-.stentech-news-list .news-date {
+.electronic-news-list .news-date {
   color: #666;
   font-size: 0.875rem;
 }
 
-.stentech-news-list .news-title {
+.electronic-news-list .news-title {
   font-size: 1.25rem;
   color: #003366;
   margin: 0 0 1rem 0;
@@ -147,14 +147,14 @@
   line-height: 1.4;
 }
 
-.stentech-news-list .news-excerpt {
+.electronic-news-list .news-excerpt {
   color: #555;
   line-height: 1.6;
   margin: 0 0 1.5rem 0;
   flex-grow: 1;
 }
 
-.stentech-news-list .news-meta {
+.electronic-news-list .news-meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,23 +162,23 @@
   border-top: 1px solid #e0e0e0;
 }
 
-.stentech-news-list .news-author {
+.electronic-news-list .news-author {
   color: #666;
   font-size: 0.875rem;
 }
 
-.stentech-news-list .news-link {
+.electronic-news-list .news-link {
   color: #0066cc;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.stentech-news-list .news-link:hover {
+.electronic-news-list .news-link:hover {
   color: #ff6b35;
 }
 
-.stentech-news-list .pagination {
+.electronic-news-list .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,7 +186,7 @@
   margin-top: 3rem;
 }
 
-.stentech-news-list .pagination-btn {
+.electronic-news-list .pagination-btn {
   padding: 0.75rem 1.5rem;
   background: #003366;
   color: white;
@@ -197,37 +197,37 @@
   transition: all 0.3s ease;
 }
 
-.stentech-news-list .pagination-btn:hover:not(:disabled) {
+.electronic-news-list .pagination-btn:hover:not(:disabled) {
   background: #0066cc;
   transform: translateY(-2px);
 }
 
-.stentech-news-list .pagination-btn:disabled {
+.electronic-news-list .pagination-btn:disabled {
   background: #ccc;
   cursor: not-allowed;
   opacity: 0.6;
 }
 
-.stentech-news-list .pagination-info {
+.electronic-news-list .pagination-info {
   color: #666;
   font-weight: 600;
 }
 
 @media (max-width: 768px) {
-  .stentech-news-list .news-grid {
+  .electronic-news-list .news-grid {
     grid-template-columns: 1fr;
   }
   
-  .stentech-news-list .news-filters {
+  .electronic-news-list .news-filters {
     gap: 0.5rem;
   }
   
-  .stentech-news-list .filter-btn {
+  .electronic-news-list .filter-btn {
     padding: 0.625rem 1rem;
     font-size: 0.875rem;
   }
   
-  .stentech-news-list .pagination {
+  .electronic-news-list .pagination {
     flex-direction: column;
     gap: 1rem;
   }

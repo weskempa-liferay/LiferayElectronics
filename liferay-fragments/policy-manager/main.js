@@ -1,5 +1,5 @@
 (function(fragmentElement) {
-  const rootElement = fragmentElement || document.querySelector('.stentech-policy-manager');
+  const rootElement = fragmentElement || document.querySelector('.electronic-policy-manager');
   if (!rootElement) return;
 
   const form = rootElement.querySelector('.policy-form');

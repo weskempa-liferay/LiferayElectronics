@@ -1,4 +1,4 @@
-.stentech-header {
+.electronic-header {
   background: #ffffff;
   box-shadow: 0 2px 10px rgba(0, 51, 102, 0.1);
   position: relative;
@@ -6,11 +6,11 @@
   transition: all 0.3s ease;
 }
 
-.stentech-header.sticky {
+.electronic-header.sticky {
   position: sticky;
   top: 0;
 }
-.stentech-header .header-container {
+.electronic-header .header-container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 2rem;
@@ -20,31 +20,31 @@
   gap: 2rem;
 }
 
-.stentech-header .header-logo a {
+.electronic-header .header-logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
 
-.stentech-header .logo-image {
+.electronic-header .logo-image {
   height: 48px;
   width: auto;
 }
 
-.stentech-header .logo-text {
+.electronic-header .logo-text {
   font-size: 1.75rem;
   font-weight: 700;
   color: #003366;
   letter-spacing: -0.5px;
 }
 
-.stentech-header .header-nav {
+.electronic-header .header-nav {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.stentech-header .nav-menu {
+.electronic-header .nav-menu {
   display: flex;
   list-style: none;
   margin: 0;
@@ -52,11 +52,11 @@
   gap: 0.5rem;
 }
 
-.stentech-header .nav-item {
+.electronic-header .nav-item {
   position: relative;
 }
 
-.stentech-header .nav-link {
+.electronic-header .nav-link {
   display: block;
   padding: 0.75rem 1rem;
   color: #003366;
@@ -67,12 +67,12 @@
   border-radius: 6px;
 }
 
-.stentech-header .nav-link:hover {
+.electronic-header .nav-link:hover {
   color: #ff6b35;
   background: rgba(0, 102, 204, 0.05);
 }
 
-.stentech-header .dropdown-menu {
+.electronic-header .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -88,14 +88,14 @@
   z-index: 100;
 }
 
-.stentech-header .nav-item:hover .dropdown-menu,
-.stentech-header .dropdown-menu.open {
+.electronic-header .nav-item:hover .dropdown-menu,
+.electronic-header .dropdown-menu.open {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-.stentech-header .dropdown-item {
+.electronic-header .dropdown-item {
   display: block;
   padding: 0.75rem 1.5rem;
   color: #555;
@@ -104,18 +104,18 @@
   transition: all 0.2s ease;
 }
 
-.stentech-header .dropdown-item:hover {
+.electronic-header .dropdown-item:hover {
   color: #ff6b35;
   background: rgba(0, 102, 204, 0.05);
 }
 
-.stentech-header .header-actions {
+.electronic-header .header-actions {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.stentech-header .header-cta {
+.electronic-header .header-cta {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
@@ -128,12 +128,12 @@
   box-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
 }
 
-.stentech-header .header-cta:hover {
+.electronic-header .header-cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
 }
 
-.stentech-header .mobile-menu-toggle {
+.electronic-header .mobile-menu-toggle {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -146,7 +146,7 @@
   padding: 0;
 }
 
-.stentech-header .hamburger {
+.electronic-header .hamburger {
   width: 24px;
   height: 2px;
   background: #003366;
@@ -154,8 +154,8 @@
   transition: all 0.3s ease;
 }
 
-.stentech-header .hamburger::before,
-.stentech-header .hamburger::after {
+.electronic-header .hamburger::before,
+.electronic-header .hamburger::after {
   content: '';
   position: absolute;
   width: 24px;
@@ -164,29 +164,29 @@
   transition: all 0.3s ease;
 }
 
-.stentech-header .hamburger::before {
+.electronic-header .hamburger::before {
   top: -8px;
 }
 
-.stentech-header .hamburger::after {
+.electronic-header .hamburger::after {
   top: 8px;
 }
 
-.stentech-header .mobile-menu-toggle.active .hamburger {
+.electronic-header .mobile-menu-toggle.active .hamburger {
   background: transparent;
 }
 
-.stentech-header .mobile-menu-toggle.active .hamburger::before {
+.electronic-header .mobile-menu-toggle.active .hamburger::before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.stentech-header .mobile-menu-toggle.active .hamburger::after {
+.electronic-header .mobile-menu-toggle.active .hamburger::after {
   top: 0;
   transform: rotate(-45deg);
 }
 
-.stentech-header .mobile-menu {
+.electronic-header .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -200,12 +200,12 @@
   z-index: 999;
 }
 
-.stentech-header .mobile-menu.active {
+.electronic-header .mobile-menu.active {
   opacity: 1;
   visibility: visible;
 }
 
-.stentech-header .mobile-menu-content {
+.electronic-header .mobile-menu-content {
   padding: 6rem 2rem 2rem;
   max-width: 400px;
   margin: 0 auto;
@@ -214,7 +214,7 @@
   gap: 0.5rem;
 }
 
-.stentech-header .mobile-nav-link {
+.electronic-header .mobile-nav-link {
   display: block;
   padding: 1rem;
   color: #ffffff;
@@ -225,18 +225,18 @@
   transition: all 0.2s ease;
 }
 
-.stentech-header .mobile-nav-link:hover {
+.electronic-header .mobile-nav-link:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #ff8c42;
 }
 
-.stentech-header .mobile-nav-link.submenu-item {
+.electronic-header .mobile-nav-link.submenu-item {
   padding-left: 2rem;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.85);
 }
 
-.stentech-header .mobile-nav-cta {
+.electronic-header .mobile-nav-cta {
   display: block;
   margin-top: 1rem;
   padding: 1rem;
@@ -250,34 +250,34 @@
   transition: all 0.3s ease;
 }
 
-.stentech-header .mobile-nav-cta:hover {
+.electronic-header .mobile-nav-cta:hover {
   transform: scale(1.05);
 }
 
 @media (max-width: 968px) {
-  .stentech-header .header-nav {
+  .electronic-header .header-nav {
     display: none;
   }
   
-  .stentech-header .header-cta {
+  .electronic-header .header-cta {
     display: none;
   }
   
-  .stentech-header .mobile-menu-toggle {
+  .electronic-header .mobile-menu-toggle {
     display: flex;
   }
 }
 
 @media (max-width: 480px) {
-  .stentech-header .header-container {
+  .electronic-header .header-container {
     padding: 1rem 1.5rem;
   }
   
-  .stentech-header .logo-text {
+  .electronic-header .logo-text {
     font-size: 1.5rem;
   }
   
-  .stentech-header .logo-image {
+  .electronic-header .logo-image {
     height: 40px;
   }
 }

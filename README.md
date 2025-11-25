@@ -19,7 +19,7 @@ This fragment collection brings their brand to life with professional, responsiv
 - Overlay with gradient for text readability
 - Configurable headline, subheadline, and CTA button
 - Responsive design with mobile optimization
-- **Location:** `stentech-fragments/hero-video/`
+- **Location:** `electronic-fragments/hero-video/`
 
 ### 2. **Product Grid with Icons**
 - Animated grid showcasing product/service categories
@@ -27,21 +27,21 @@ This fragment collection brings their brand to life with professional, responsiv
 - Hover effects with color transitions
 - Scroll-triggered fade-in animations
 - Fully responsive grid layout
-- **Location:** `stentech-fragments/product-grid/`
+- **Location:** `electronic-fragments/product-grid/`
 
 ### 3. **Statistics Counter**
 - Animated number counters that trigger on scroll
 - Highlights key business metrics (locations, team size, customers)
 - Gradient background with glassmorphism effect
 - Configurable statistics with labels and descriptions
-- **Location:** `stentech-fragments/statistics-counter/`
+- **Location:** `electronic-fragments/statistics-counter/`
 
 ### 4. **Feature Section with Image**
 - Flexible content section with image and text
 - Configurable image position (left or right)
 - Scroll animations for engaging reveal
 - Perfect for showcasing capabilities and benefits
-- **Location:** `stentech-fragments/feature-section/`
+- **Location:** `electronic-fragments/feature-section/`
 
 ### 5. **Testimonial Carousel**
 - Auto-rotating customer testimonial carousel
@@ -49,14 +49,14 @@ This fragment collection brings their brand to life with professional, responsiv
 - Dot indicators for slide position
 - Pause on hover for user control
 - Real customer quotes from StenTech partners
-- **Location:** `stentech-fragments/testimonial-carousel/`
+- **Location:** `electronic-fragments/testimonial-carousel/`
 
 ### 6. **Call-to-Action Section**
 - Dual CTA cards for different user journeys
 - Gradient background matching brand colors
 - Glassmorphism design with hover effects
 - Configurable buttons and labels
-- **Location:** `stentech-fragments/cta-section/`
+- **Location:** `electronic-fragments/cta-section/`
 
 ### 7. **Header Navigation**
 - Professional sticky navigation with StenTech branding
@@ -65,7 +65,7 @@ This fragment collection brings their brand to life with professional, responsiv
 - Responsive mobile menu with hamburger toggle
 - Complete focus trapping and ARIA attributes
 - Configurable logo, CTA button, and sticky behavior
-- **Location:** `stentech-fragments/header-navigation/`
+- **Location:** `electronic-fragments/header-navigation/`
 
 ### 8. **Footer**
 - Comprehensive footer with company info and links
@@ -73,7 +73,7 @@ This fragment collection brings their brand to life with professional, responsiv
 - Social media links with icons
 - Auto-updating copyright year
 - Configurable company description and contact details
-- **Location:** `stentech-fragments/footer/`
+- **Location:** `electronic-fragments/footer/`
 
 ### Intranet Fragments (5)
 
@@ -85,7 +85,7 @@ The collection also includes fragments for logged-in employee experiences:
 - Combined search and category filters
 - Responsive article cards with metadata
 - Designed for employees like Marcos (Operations) to stay informed
-- **Location:** `stentech-fragments/news-article-list/`
+- **Location:** `electronic-fragments/news-article-list/`
 
 ### 10. **News Article Detail**
 - Full article view with rich content formatting
@@ -93,7 +93,7 @@ The collection also includes fragments for logged-in employee experiences:
 - Email sharing and print functionality
 - Related articles section
 - Configurable category badges
-- **Location:** `stentech-fragments/news-article-detail/`
+- **Location:** `electronic-fragments/news-article-detail/`
 
 ### 11. **Article Publisher**
 - Create and publish news articles
@@ -102,7 +102,7 @@ The collection also includes fragments for logged-in employee experiences:
 - Featured image upload
 - Draft management system
 - Designed for Jennifer (HR) to publish company updates
-- **Location:** `stentech-fragments/article-publisher/`
+- **Location:** `electronic-fragments/article-publisher/`
 
 ### 12. **Policy Document Viewer**
 - Browse company policies by category
@@ -110,7 +110,7 @@ The collection also includes fragments for logged-in employee experiences:
 - Version tracking display
 - Categorized by HR, Safety, Operations
 - For all employees to access company guidelines
-- **Location:** `stentech-fragments/policy-viewer/`
+- **Location:** `electronic-fragments/policy-viewer/`
 
 ### 13. **Policy Manager**
 - Upload and manage policy documents
@@ -119,7 +119,7 @@ The collection also includes fragments for logged-in employee experiences:
 - Recent updates dashboard
 - PDF/DOC file upload support
 - Designed for Jennifer (HR) to maintain policies
-- **Location:** `stentech-fragments/policy-manager/`
+- **Location:** `electronic-fragments/policy-manager/`
 
 ## Liferay DXP Structure
 
@@ -194,7 +194,7 @@ The preview page (`preview/index.html`) showcases:
 ## Importing to Liferay DXP
 
 ### Step 1: Prepare the Collection
-1. Zip the entire `stentech-fragments` folder
+1. Zip the entire `electronic-fragments` folder
 2. Ensure the `collection.json` file is at the root of the collection
 
 ### Step 2: Import in Liferay
@@ -254,7 +254,7 @@ These fragments support:
 ## File Structure
 
 ```
-stentech-fragments/
+electronic-fragments/
 ├── collection.json
 ├── hero-video/
 │   ├── fragment.json

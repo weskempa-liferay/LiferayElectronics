@@ -24,7 +24,7 @@
           "description": "Contact email address",
           "type": "text",
           "dataType": "string",
-          "defaultValue": "info@stentech.com"
+          "defaultValue": "info@electronic.com"
         },
         {
           "name": "address",

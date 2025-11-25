@@ -22,7 +22,7 @@ Create professional, reusable UI fragments for StenTech's public website and int
 
 ## Project Structure
 
-### Fragment Collection (`stentech-fragments/`)
+### Fragment Collection (`electronic-fragments/`)
 Contains 13 production-ready Liferay fragments:
 
 **Public Website Fragments (8):**
@@ -92,7 +92,7 @@ python3 server.py
 
 ### File Organization
 ```
-stentech-fragments/          # Main fragment collection
+electronic-fragments/          # Main fragment collection
 ├── collection.json          # Collection metadata
 ├── hero-video/             # Individual fragments
 ├── product-grid/
@@ -112,7 +112,7 @@ README.md                    # Full documentation
 
 ## Deployment to Liferay
 
-1. **Package:** Zip the `stentech-fragments/` folder
+1. **Package:** Zip the `electronic-fragments/` folder
 2. **Import:** Site Builder → Page Fragments → Import
 3. **Use:** Drag fragments onto pages from the StenTech Fragments collection
 4. **Configure:** Edit content through the fragment configuration panel

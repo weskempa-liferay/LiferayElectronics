@@ -1,5 +1,5 @@
 (function(fragmentElement) {
-  const rootElement = fragmentElement || document.querySelector('.stentech-article-detail');
+  const rootElement = fragmentElement || document.querySelector('.electronic-article-detail');
   if (!rootElement) return;
 
   const shareButtons = rootElement.querySelectorAll('.share-btn');

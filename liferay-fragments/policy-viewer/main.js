@@ -1,5 +1,5 @@
 (function(fragmentElement) {
-  const rootElement = fragmentElement || document.querySelector('.stentech-policy-viewer');
+  const rootElement = fragmentElement || document.querySelector('.electronic-policy-viewer');
   if (!rootElement) return;
 
   const searchInput = rootElement.querySelector('#policy-search');

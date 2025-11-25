@@ -1,16 +1,16 @@
-.stentech-article-detail {
+.electronic-article-detail {
   padding: 3rem 0;
   background: #f8f9fa;
   min-height: 100vh;
 }
 
-.stentech-article-detail .container {
+.electronic-article-detail .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-.stentech-article-detail .back-link {
+.electronic-article-detail .back-link {
   display: inline-flex;
   align-items: center;
   color: #0066cc;
@@ -20,11 +20,11 @@
   transition: color 0.3s ease;
 }
 
-.stentech-article-detail .back-link:hover {
+.electronic-article-detail .back-link:hover {
   color: #003366;
 }
 
-.stentech-article-detail .article-header {
+.electronic-article-detail .article-header {
   background: white;
   padding: 2.5rem;
   border-radius: 12px;
@@ -32,14 +32,14 @@
   box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
 }
 
-.stentech-article-detail .article-meta-header {
+.electronic-article-detail .article-meta-header {
   display: flex;
   gap: 1rem;
   align-items: center;
   margin-bottom: 1.5rem;
 }
 
-.stentech-article-detail .article-category {
+.electronic-article-detail .article-category {
   display: inline-block;
   padding: 0.375rem 0.875rem;
   background: #ff6b35;
@@ -51,12 +51,12 @@
   letter-spacing: 0.5px;
 }
 
-.stentech-article-detail .article-date {
+.electronic-article-detail .article-date {
   color: #666;
   font-size: 0.938rem;
 }
 
-.stentech-article-detail .article-title {
+.electronic-article-detail .article-title {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   color: #003366;
   margin: 0 0 1.5rem 0;
@@ -64,7 +64,7 @@
   line-height: 1.2;
 }
 
-.stentech-article-detail .article-author {
+.electronic-article-detail .article-author {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -72,7 +72,7 @@
   border-top: 1px solid #e0e0e0;
 }
 
-.stentech-article-detail .author-avatar {
+.electronic-article-detail .author-avatar {
   width: 48px;
   height: 48px;
   background: linear-gradient(135deg, #003366, #0066cc);
@@ -84,27 +84,27 @@
   flex-shrink: 0;
 }
 
-.stentech-article-detail .author-avatar svg {
+.electronic-article-detail .author-avatar svg {
   width: 28px;
   height: 28px;
 }
 
-.stentech-article-detail .author-info {
+.electronic-article-detail .author-info {
   display: flex;
   flex-direction: column;
 }
 
-.stentech-article-detail .author-info strong {
+.electronic-article-detail .author-info strong {
   color: #003366;
   font-size: 1rem;
 }
 
-.stentech-article-detail .author-info span {
+.electronic-article-detail .author-info span {
   color: #666;
   font-size: 0.875rem;
 }
 
-.stentech-article-detail .article-content {
+.electronic-article-detail .article-content {
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -112,55 +112,55 @@
   margin-bottom: 3rem;
 }
 
-.stentech-article-detail .article-image {
+.electronic-article-detail .article-image {
   width: 100%;
   aspect-ratio: 2/1;
   overflow: hidden;
 }
 
-.stentech-article-detail .article-image img {
+.electronic-article-detail .article-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.stentech-article-detail .article-body {
+.electronic-article-detail .article-body {
   padding: 2.5rem;
 }
 
-.stentech-article-detail .article-body .lead {
+.electronic-article-detail .article-body .lead {
   font-size: 1.25rem;
   line-height: 1.7;
   color: #333;
   margin-bottom: 2rem;
 }
 
-.stentech-article-detail .article-body h2 {
+.electronic-article-detail .article-body h2 {
   font-size: 1.75rem;
   color: #003366;
   margin: 2rem 0 1rem 0;
   font-weight: 700;
 }
 
-.stentech-article-detail .article-body p {
+.electronic-article-detail .article-body p {
   color: #555;
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
 
-.stentech-article-detail .article-body ul,
-.stentech-article-detail .article-body ol {
+.electronic-article-detail .article-body ul,
+.electronic-article-detail .article-body ol {
   color: #555;
   line-height: 1.8;
   margin: 1.5rem 0;
   padding-left: 1.5rem;
 }
 
-.stentech-article-detail .article-body li {
+.electronic-article-detail .article-body li {
   margin-bottom: 0.5rem;
 }
 
-.stentech-article-detail .article-body blockquote {
+.electronic-article-detail .article-body blockquote {
   border-left: 4px solid #ff6b35;
   padding: 1.5rem 1.5rem 1.5rem 2rem;
   margin: 2rem 0;
@@ -170,7 +170,7 @@
   border-radius: 0 8px 8px 0;
 }
 
-.stentech-article-detail .article-body cite {
+.electronic-article-detail .article-body cite {
   display: block;
   margin-top: 1rem;
   font-style: normal;
@@ -178,16 +178,16 @@
   color: #003366;
 }
 
-.stentech-article-detail .article-body a {
+.electronic-article-detail .article-body a {
   color: #0066cc;
   text-decoration: underline;
 }
 
-.stentech-article-detail .article-body a:hover {
+.electronic-article-detail .article-body a:hover {
   color: #ff6b35;
 }
 
-.stentech-article-detail .article-footer {
+.electronic-article-detail .article-footer {
   padding: 2rem 2.5rem;
   border-top: 1px solid #e0e0e0;
   display: flex;
@@ -197,20 +197,20 @@
   gap: 1.5rem;
 }
 
-.stentech-article-detail .article-tags {
+.electronic-article-detail .article-tags {
   display: flex;
   gap: 0.75rem;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.stentech-article-detail .tag-label,
-.stentech-article-detail .share-label {
+.electronic-article-detail .tag-label,
+.electronic-article-detail .share-label {
   font-weight: 600;
   color: #003366;
 }
 
-.stentech-article-detail .tag {
+.electronic-article-detail .tag {
   padding: 0.375rem 0.875rem;
   background: #e8f2ff;
   color: #0066cc;
@@ -219,13 +219,13 @@
   font-weight: 500;
 }
 
-.stentech-article-detail .article-share {
+.electronic-article-detail .article-share {
   display: flex;
   gap: 0.75rem;
   align-items: center;
 }
 
-.stentech-article-detail .share-btn {
+.electronic-article-detail .share-btn {
   width: 40px;
   height: 40px;
   background: #f8f9fa;
@@ -239,34 +239,34 @@
   color: #003366;
 }
 
-.stentech-article-detail .share-btn:hover {
+.electronic-article-detail .share-btn:hover {
   background: #003366;
   color: white;
   border-color: #003366;
 }
 
-.stentech-article-detail .related-articles {
+.electronic-article-detail .related-articles {
   margin-top: 3rem;
 }
 
-.stentech-article-detail .related-articles.hidden {
+.electronic-article-detail .related-articles.hidden {
   display: none;
 }
 
-.stentech-article-detail .related-title {
+.electronic-article-detail .related-title {
   font-size: 1.75rem;
   color: #003366;
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
-.stentech-article-detail .related-grid {
+.electronic-article-detail .related-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
-.stentech-article-detail .related-card {
+.electronic-article-detail .related-card {
   background: white;
   padding: 1.5rem;
   border-radius: 12px;
@@ -275,12 +275,12 @@
   cursor: pointer;
 }
 
-.stentech-article-detail .related-card:hover {
+.electronic-article-detail .related-card:hover {
   box-shadow: 0 8px 24px rgba(0, 51, 102, 0.15);
   transform: translateY(-4px);
 }
 
-.stentech-article-detail .related-category {
+.electronic-article-detail .related-category {
   display: inline-block;
   padding: 0.25rem 0.625rem;
   background: #e8f2ff;
@@ -293,7 +293,7 @@
   margin-bottom: 0.75rem;
 }
 
-.stentech-article-detail .related-card-title {
+.electronic-article-detail .related-card-title {
   font-size: 1.125rem;
   color: #003366;
   margin: 0.75rem 0;
@@ -301,24 +301,24 @@
   line-height: 1.4;
 }
 
-.stentech-article-detail .related-date {
+.electronic-article-detail .related-date {
   color: #666;
   font-size: 0.875rem;
 }
 
 @media (max-width: 768px) {
-  .stentech-article-detail .article-header,
-  .stentech-article-detail .article-body {
+  .electronic-article-detail .article-header,
+  .electronic-article-detail .article-body {
     padding: 1.5rem;
   }
   
-  .stentech-article-detail .article-footer {
+  .electronic-article-detail .article-footer {
     flex-direction: column;
     align-items: flex-start;
     padding: 1.5rem;
   }
   
-  .stentech-article-detail .related-grid {
+  .electronic-article-detail .related-grid {
     grid-template-columns: 1fr;
   }
 }
